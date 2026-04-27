@@ -1,3 +1,4 @@
+import { AboutSection } from "./components/about-section"
 import { HeroSection } from "./components/hero-section"
 
 export const HomeView = () => {
@@ -5,6 +6,7 @@ export const HomeView = () => {
         <>
         <main>
         <HeroSection/>
+        <AboutSection/>
         </main>
         <footer>
         </footer>

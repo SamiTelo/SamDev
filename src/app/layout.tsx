@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dev fullstack | UI/UX . Web . Mobile . DevOps ",
-  description: "Développeur fullstack | UI/UX . Web . Mobile . DevOps",
+  title: "Dev fullstack | Mobile . Web . UI/UX . DevOps",
+  description: "Développeur fullstack | Mobile . Web . UI/UX . DevOps",
 };
 
 export default function RootLayout({
