@@ -1,9 +1,9 @@
-# Samuel Tiemtore – Portfolio Fullstack Développeur
+## Samuel Tiemtore – Portfolio Fullstack Développeur
 
 Bienvenue sur mon portfolio personnel.
 Ce projet présente mes compétences, mes projets et mon univers en tant que développeur Fullstack.
 
-# Objectif du projet
+## Objectif du projet
 
 Ce portfolio me permet de :
 
@@ -14,7 +14,7 @@ Ce portfolio me permet de :
 
 ---
 
-# Stack Technique
+## Stack Technique
 
 - Next.js 16 (App Router)
 - React
@@ -24,7 +24,7 @@ Ce portfolio me permet de :
 - Shadcn UI
 
 
-# Fonctionnalités
+## Fonctionnalités
 
 - Design moderne et responsive
 - Navigation fluide avec menu mobile
@@ -44,11 +44,11 @@ npm run dev
 
 ```
 
-# Contact
+## Contact
 
 - Email: [samueltiemtore10@gmail.com](mailto:samueltiemtore10@gmail.com)
 - GitHub : https://github.com/SamiTelo
 
-# Licence
+## Licence
 
 Ce projet est sous licence MIT. Tous droits réservés.
