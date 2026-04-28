@@ -56,7 +56,7 @@ export function SheetSide() {
               </Button>
               <SheetClose asChild>
                 <Button variant="outline"className="rounded-full h-10 px-6 py-2">
-                  Retour
+                  Fermer
                 </Button>
               </SheetClose>
             </SheetFooter>
