@@ -19,7 +19,7 @@ export const AboutSection = () => {
        {/* IMAGE BG BOTTOM LEFT */}
       <div className="absolute -bottom-10 md:-bottom-46 left-0 -z-10 pointer-events-none">
         <Image
-          src="/assets/About-bg-4.svg"
+          src="/assets/about-bg-1.svg"
           alt=""
           width={600}
           height={600}
