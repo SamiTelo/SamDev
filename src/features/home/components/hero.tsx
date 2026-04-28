@@ -4,33 +4,25 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { Facebook, Linkedin, Rocket, Instagram} from "lucide-react";
-import { NavBar } from "./navbar";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-200 w-full px-6 py-12 lg:px-20 md:pb-52 bg-cover bg-center bg-[url('/assets/hero-bg.svg')]">
-      <div className="relative z-10 mx-auto max-w-7xl">
-
-        {/*----------------------------------------------
-          Navbar 
-        --------------------------------------------------------*/}
-        <NavBar />
-
+    <section className="relative min-h-200 w-full px-6 py-12 -top-44 lg:px-20 md:pb-52 md:pt-32 pt-52  bg-cover bg-center bg-[url('/assets/hero-bg.svg')]">
         {/*----------------------------------------------
            Main Content Grid 
         ----------------------------------------------------*/}
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-[1.3fr_1.3fr] lg:grid-cols-[1.3fr_1.3fr] items-center  md:mt-20">
+        <div className="max-w-7xl mx-auto gap-0 sm:gap-20 md:gap-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-[1.3fr_1.3fr] lg:grid-cols-[1.3fr_1.3fr] items-center  md:mt-20">
 
         {/* ----------------------------------------
           BLOC LEFT: Text Presentation 
       ----------------------------------------------- */}
-         <div className="flex-1 py-8 md:mt-12 -mt-4 pl-2.5">
+         <div className="flex-1 py-8 md:mt-12 -mt-4 md:pl-2.5 pl-0">
 
         {/* Badge */}
         <motion.div
           animate={{ y: [0, -5, 0] }}
           transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
-          className="bg-[#F6F9FC] w-fit h-10 max-w-7xl mx-auto md:max-w-7xl md:mx-0 rounded-full border border-[#F75023] flex flex-row gap-1 justify-items-center px-3"
+          className="bg-white w-fit h-10 max-w-7xl mx-auto md:max-w-7xl md:mx-0 rounded-full   flex flex-row gap-1 justify-items-center px-6"
         >
           <div className="pt-2 mr-2">
            <Image
@@ -132,7 +124,6 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };
