@@ -91,7 +91,7 @@ export const HeroSection = () => {
             <div className="absolute left-20 -top-10 z-20 animate-bounce duration-3000 hidden md:block sm:block">
               <div className="rounded-xl bg-white p-4 shadow-xl">
                 <Image
-                  src="/assets/nestjs.svg"
+                  src="/assets/logo-nestjs.svg"
                   alt="Nestjs"
                   width={40}
                   height={40}
