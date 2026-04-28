@@ -7,7 +7,7 @@ import { Facebook, Linkedin, Rocket, Instagram} from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-200 w-full px-6 py-12 -top-44 lg:px-20 md:pb-52 md:pt-32 pt-52  bg-cover bg-center bg-[url('/assets/hero-bg.svg')]">
+    <section className="relative min-h-200 w-full px-6 sm:px-10 py-12 -top-44 lg:px-20 md:pb-52 md:pt-32 pt-52  bg-cover bg-center bg-[url('/assets/hero-bg.svg')]">
         {/*----------------------------------------------
            Main Content Grid 
         ----------------------------------------------------*/}

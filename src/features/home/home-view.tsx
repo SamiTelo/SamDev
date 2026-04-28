@@ -1,4 +1,5 @@
 import { AboutSection } from "./components/about"
+import { CompetenceSection } from "./components/compétence"
 import { Header } from "./components/header"
 import { HeroSection } from "./components/hero"
 
@@ -16,6 +17,7 @@ export const HomeView = () => {
         <main>
         <HeroSection/>
         <AboutSection/>
+        <CompetenceSection/>
         </main>
     {/* ---------------------------
         global  Footer
