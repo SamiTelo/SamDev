@@ -78,7 +78,7 @@ export const AboutSection = () => {
             Responsive  et Mobile
           </h2>
           
-          <p className="md:text-[16px] text-sm text-gray-700 leading-relaxed max-w-xl">
+          <p className="sm:text-[16px] md:text-[16px] text-sm text-gray-700 leading-relaxed max-w-xl">
             Passionné par la création d’applications modernes, performantes et intuitives, 
             j’ai acquis les compétences nécessaires pour transformer vos idées en solutions concrètes. 
             J’interviens à chaque étape : de l’analyse du besoin à la conception, au développement, aux tests,
@@ -90,7 +90,7 @@ export const AboutSection = () => {
           <div className="pt-4">
             <Link 
               href="https://github.com/SamiTelo" 
-              className="inline-block bg-[#FF5722] hover:bg-black text-white md:text-[16px] text-sm py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-200"
+              className="inline-block  text-white md:text-[16px] text-sm py-4 px-10 rounded-full bg-[#FF5722] hover:bg-black transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-200 hover:shadow-black/50"
             >
               Github
             </Link>
