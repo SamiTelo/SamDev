@@ -46,7 +46,7 @@ export const HeroSection = () => {
           Je suis <span className="text-[#F75023]">Samuel</span> Développeur fullstack
         </h1>
 
-        <p className="mt-6 md:text-[16px] text-sm text-gray-700 text-center md:text-left leading-relaxed">
+        <p className="mt-6 sm:text-[16px] md:text-[16px] text-sm text-gray-700 text-center md:text-left leading-relaxed">
           Spécialisé dans la création d’applications web et mobiles modernes, performantes et adaptées aux besoins réels. J’allie front-end (NextJS, Flutter), back-end (NestJS) API 
           robuste et sécuriser pour transformer vos idées en solutions concrètes, intuitives et efficaces de A à Z.
         </p>

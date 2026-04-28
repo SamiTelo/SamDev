@@ -26,16 +26,16 @@ const skills = [
 
 export const CompetenceSection = () => {
   return (
-    <section className="py-20 px-6 sm:px-10 bg-white">
+    <section className="pt-20 pb-26 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white">
       {/* Header de la section */}
       <div className="text-center mb-16">
         <span className="text-[#FF5722] font-medium text-sm md:text-lg  tracking-wider">
           Expertise
         </span>
-        <h2 className=" text-3xl md:text-5xl font-bold text-slate-900 mt-6 md:mt-4 mb-4">
+        <h2 className=" text-3xl md:text-5xl font-bold text-slate-900 mt-6 md:mt-4 mb-6">
           Compétences Full-Stack
         </h2>
-        <p className="max-w-2xl mx-auto text-slate-500 md:text-[16px] text-sm leading-relaxed">
+        <p className="max-w-2xl mx-auto text-slate-500 sm:text-[16px] md:text-[16px] text-sm leading-relaxed">
           Je combine des compétences techniques avancées avec une approche
           créative pour offrir des solutions numériques complètes.
         </p>
