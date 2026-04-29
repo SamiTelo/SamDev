@@ -26,7 +26,7 @@ const skills = [
 
 export const CompetenceSection = () => {
   return (
-    <section className="pt-20 pb-26 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white">
+    <section className="pt-0 md:sm:pt-20 sm:pt-20 pb-16 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white">
       {/* Header de la section */}
       <div className="text-center mb-16">
         <span className="text-[#FF5722] font-medium text-sm md:text-lg  tracking-wider">
@@ -51,11 +51,11 @@ export const CompetenceSection = () => {
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center text-center group">
             {/* Conteneur l'icône + (Blob) */}
-            <div className="relative w-48 h-48 mb-8 flex items-center justify-center">
+            <div className="relative w-48 h-48 mb-2 sm:mb-8 md:mb-8 flex items-center justify-center">
               {/* Le fond (Blob effect) */}
               <div className={`absolute inset-0 ${skill.color} rounded-full opacity-60 blur-2xl group-hover:scale-110 transition-transform duration-500`} />
               
-              <div className="relative z-10 w-42 h-42">
+              <div className="relative z-10 w-36 h-36 sm:w-42 sm:h-42  md:w-42 md:h-42">
                 <Image
                   src={skill.icon}
                   alt={skill.title}

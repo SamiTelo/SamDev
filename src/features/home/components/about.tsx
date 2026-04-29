@@ -35,7 +35,7 @@ export const AboutSection = () => {
        {/* ---------------------------------------- 
         BLOC GAUCHE : IMAGE ET BADGES 
         ----------------------------------------------- */}
-        <div className="relative flex justify-center lg:justify-start pl-0 md:pl-10 order-2 md:order-1">
+        <div className="relative flex justify-center lg:justify-start -ml-3 sm:ml-0 md:ml-0 pl-0 md:pl-10 order-2 md:order-1">
           <div className="relative w-full max-w-md">
             <Image 
               src="/assets/img.svg" 
@@ -46,7 +46,7 @@ export const AboutSection = () => {
             />
 
             {/* Badge 1 */}
-            <div className="absolute bottom-10 md:bottom-26 -left-4 md:-left-10 bg-white py-4 px-6 md:px-10 rounded-xl shadow-2xl flex items-center space-x-4 border border-gray-100">
+            <div className="absolute bottom-10 md:bottom-26 left-0 md:-left-10 bg-white py-4 px-6 md:px-10 rounded-xl shadow-2xl flex items-center space-x-4 border border-gray-100">
               <div className="flex items-center justify-center w-10 h-10 md:w-16 md:h-16 rounded-full border-4 border-purple-100 text-purple-600 font-bold text-2xl md:text-4xl">
                 3
               </div>

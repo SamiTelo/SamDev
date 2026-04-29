@@ -77,7 +77,7 @@ export const AtoutSection = () => {
         {/* Bouton Contact */}
         <a
           href="#contact"
-          className="inline-flex items-center gap-2 md:text-[16px] text-sm text-white px-8 py-3 mt-10 rounded-full font-semibold  bg-[#FF5722] hover:bg-black transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-200 hover:shadow-black/50"
+          className="inline-flex items-center gap-2 md:text-[16px] text-sm text-white px-8 py-3 mt-4 sm:mt-10 md:mt-10 rounded-full font-semibold  bg-[#FF5722] hover:bg-black transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-200 hover:shadow-black/50"
         >
           Contactez-moi
         </a>
