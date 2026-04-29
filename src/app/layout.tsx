@@ -5,6 +5,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Dev fullstack | Mobile . Web . UI/UX . DevOps",
   description: "Développeur fullstack | Mobile . Web . UI/UX . DevOps",
+
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 
 export default function RootLayout({
@@ -15,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="font-sans antialiased" suppressHydrationWarning
+        className="font-sans antialiased min-h-screen" suppressHydrationWarning
       >
         {children}
       </body>
