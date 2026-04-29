@@ -4,6 +4,7 @@ import { CompetenceSection } from "./components/compétence"
 import { ExperienceSection } from "./components/experience"
 import { Header } from "./components/header"
 import { HeroSection } from "./components/hero"
+import { SkillSection } from "./components/skill"
 
 
 export const HomeView = () => {
@@ -22,6 +23,7 @@ export const HomeView = () => {
         <CompetenceSection/>
         <AtoutSection/>
         <ExperienceSection/>
+        <SkillSection/>
         </main>
       {/* ---------------------------
         global  Footer
