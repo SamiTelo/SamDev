@@ -35,7 +35,7 @@ export const AboutSection = () => {
        {/* ---------------------------------------- 
         BLOC GAUCHE : IMAGE ET BADGES 
         ----------------------------------------------- */}
-        <div className="relative flex justify-center lg:justify-start -ml-3 sm:ml-0 md:ml-0 pl-0 md:pl-10 order-2 md:order-1">
+        <div className="relative flex justify-center lg:justify-start -ml-5 sm:ml-0 md:ml-0 pl-0 md:pl-10 order-2 md:order-1">
           <div className="relative w-full max-w-md">
             <Image 
               src="/assets/img.svg" 

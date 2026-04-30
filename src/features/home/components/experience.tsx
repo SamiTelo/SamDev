@@ -18,8 +18,7 @@ const experiences = [
     description: [
       "Mise en place d'un site web de gestion de produits",
       "Initiation à la base de données",
-      "Installation de logiciels",
-      "Configuration machine et système",
+      "Installation de logiciels, configuration machine et système",
     ],
     icon: "/assets/web-icon.svg",
   },
@@ -48,7 +47,7 @@ export const ExperienceSection = () => {
             Voici un aperçu de mes expériences, illustrant mon savoir-faire et
             ma capacité à mener des projets à succès.
           </p>
-          <button className="bg-orange-600 text-white mt-4 px-8 py-3 rounded-full font-semibold hover:bg-orange-700 transition-all shadow-lg shadow-orange-200 active:scale-95">
+          <button className="bg-orange-600 text-white md:text-[16px] text-sm mt-4 px-8 py-3 rounded-full font-semibold hover:bg-orange-700 transition-all shadow-lg shadow-orange-200 active:scale-95">
             Mon CV
           </button>
         </div>

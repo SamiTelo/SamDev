@@ -3,8 +3,7 @@ import { SheetSide } from "./navbar-mobile";
 
 export const NavBar = () => {
   return (
-    <header className="max-w-7xl mx-6 md:mx-auto sticky md:top-6 top-4 inset-x-0 z-40 transition-all duration-300">
-      <nav className=" mb-16 md:mb-20 flex items-center justify-between rounded-full bg-black px-6 md:px-8 py-4 md:py-5 text-white backdrop-blur">
+    <nav className=" mb-16 md:mb-20 flex items-center justify-between rounded-full bg-black px-6 md:px-8 py-4 md:py-5 text-white backdrop-blur">
         {/* Logo */}
         <div className="flex items-center gap-2 font-bold tracking-wider">
           <div className="h-8 w-8 md:h-10 md:w-10 rounded-full relative">
@@ -35,6 +34,5 @@ export const NavBar = () => {
         {/* Mobile Menu */}
         <SheetSide />
       </nav>
-    </header>
   );
 };
