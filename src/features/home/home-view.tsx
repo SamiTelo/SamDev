@@ -1,3 +1,4 @@
+import { ContactSection } from "../contact/contact"
 import { AboutSection } from "./components/about"
 import { AtoutSection } from "./components/atout"
 import { CompetenceSection } from "./components/compétence"
@@ -32,6 +33,7 @@ export const HomeView = () => {
         <FaqSection/>
         <TestimonialsSection/>
         <CtaSection/>
+        <ContactSection/>
         </main>
       {/* ---------------------------
         global  Footer
