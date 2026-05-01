@@ -108,7 +108,7 @@ export const ContactSection = () => {
       </div>
 
       {/* Decorative dots in bottom right (optional) */}
-      <div className="absolute -bottom-8 sm:-bottom-10 md:-bottom-30 right-0 pointer-events-none">
+      <div className="absolute bottom-8 sm:-bottom-10 md:-bottom-30 right-0 pointer-events-none">
         <Image
           src="/assets/contact-bg.svg"
           alt=""

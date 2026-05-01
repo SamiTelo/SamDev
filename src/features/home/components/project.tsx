@@ -7,51 +7,62 @@ const projects = [
     id: 1,
     title: "Site vitrine Webshift",
     description:
-      "Capacité à maîtriser rapidement de nouvelles technologies et à m'adapter aux évolutions du projet.",
-    image: "/assets/home.png",
+      "WebShift, un site web moderne et responsive dédié au marketing digital, à l’acquisition et aux services de branding en ligne.",
+    image: "/assets/web-shift.png",
     skills: [
       "/assets/skills/nextjs.svg",
       "/assets/skills/figma.svg",
       "/assets/skills/react-icon.svg",
-      "/assets/skills/nextjs.svg",
+      "/assets/skills/tailwindcss-icon.svg",
+      "/assets/skills/motion-icon.svg",
+      "/assets/skills/typescript-icon.svg",
     ],
+    demoUrl: "https://site-vitrine-web-shift.vercel.app/",
+    githubUrl: "https://github.com/SamiTelo/Site-vitrine-WebShift",
   },
   {
     id: 2,
-    title: "Dashboard FootballClub",
+    title: "Sass Football Club",
     description:
-      "Capacité à maîtriser rapidement de nouvelles technologies et à m'adapter aux évolutions du projet.",
+      "Dashboard fullstack pour la gestion d’un club de football. Construit avec Next.js et connecté à une API backend NestJS + Prisma.",
     image: "/assets/dashboard-main.png",
     skills: [
       "/assets/skills/nextjs.svg",
       "/assets/skills/figma.svg",
       "/assets/skills/react-icon.svg",
-      "/assets/skills/nextjs.svg",
-       "/assets/skills/react-icon.svg",
-      "/assets/skills/nextjs.svg",
-      "/assets/skills/figma.svg",
+      "/assets/skills/tailwindcss-icon.svg",
+      "/assets/skills/typescript-icon.svg",
+      "/assets/skills/nestjs.svg",
+      "/assets/skills/nodejs-icon.svg",
+      "/assets/skills/prisma-icon.svg",
+      "/assets/skills/postgresql-icon.svg",
     ],
+    demoUrl: "https://dashboard-football-club.vercel.app",
+    githubUrl: "https://github.com/SamiTelo/dashboard-football-club",
   },
   {
     id: 3,
-    title: "FootballClub login page",
+    title: "API service gestion club football",
     description:
-      "Capacité à maîtriser rapidement de nouvelles technologies et à m'adapter aux évolutions du projet.",
-    image: "/assets/login.png",
+      "API backend sécurisée (NestJS, Prisma, PostgreSQL) avec JWT et gestion des rôles, incluant modules métier, monitoring et suivi d’erreurs.",
+    image: "/assets/swagger-api.png",
     skills: [
-      "/assets/skills/react-icon.svg",
-      "/assets/skills/nextjs.svg",
-      "/assets/skills/figma.svg",
-      "/assets/skills/react-icon.svg",
-      "/assets/skills/nextjs.svg",
-      "/assets/skills/figma.svg",
+      "/assets/skills/typescript-icon.svg",
+      "/assets/skills/nestjs.svg",
+      "/assets/skills/nodejs-icon.svg",
+      "/assets/skills/prisma-icon.svg",
+      "/assets/skills/postgresql-icon.svg",
+      "/assets/skills/swagger-icon.svg",
+      "/assets/skills/docker-icon.svg",
     ],
+    demoUrl: "https://api-football-gfpz.onrender.com/docs",
+    githubUrl: "https://github.com/SamiTelo/API-Football",
   },
 ];
 
 export const ProjectSection = () => {
   return (
-    <section className="py-20 px-6 sm:px-10 min-h-screen">
+    <section className="py-38 px-6 sm:px-10 min-h-screen">
       {/* Title */}
       <div className="text-center mb-16">
         <span className="text-[#FF5722] font-medium text-sm md:text-lg tracking-wider">
@@ -87,7 +98,7 @@ export const ProjectSection = () => {
             </div>
 
             {/* Content */}
-            <div className="mt-12 space-y-4 px-2">
+            <div className="mt-11 space-y-4 px-2">
               <h3 className="text-xl font-bold text-gray-900">
                 {project.title}
               </h3>
@@ -96,10 +107,9 @@ export const ProjectSection = () => {
                 {project.description}
               </p>
 
-            
               {/* Skills empilés */}
-              <div className="flex items-center -space-x-3 mt-4">
-                {project.skills.slice(0, 5).map((skill, index) => (
+              <div className="flex items-center -space-x-3 mt-5">
+                {project.skills.slice(0, 11).map((skill, index) => (
                   <div
                     key={index}
                     className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-white bg-[#F6F9FC]"
@@ -116,13 +126,23 @@ export const ProjectSection = () => {
               </div>
 
               <div className="flex items-center justify-between pt-4">
-                <button className="px-10 sm:px-40 md:px-30 py-2.5 rounded-full text-sm font-semibold bg-black text-white">
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-10 sm:px-40 md:px-30 py-2.5 rounded-full text-sm font-semibold bg-black text-white"
+                >
                   Demo
-                </button>
+                </a>
 
-                <div className="p-3 rounded-full border bg-white border-white text-orange-500">
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full border bg-white border-white text-orange-500"
+                >
                   <Github size={20} />
-                </div>
+                </a>
               </div>
             </div>
           </div>
