@@ -7,6 +7,7 @@ import { Header } from "./components/header"
 import { HeroSection } from "./components/hero"
 import { ProjectSection } from "./components/project"
 import { SkillSection } from "./components/skill"
+import { TestimonialsSection } from "./components/testimonial"
 
 
 export const HomeView = () => {
@@ -28,6 +29,7 @@ export const HomeView = () => {
         <SkillSection/>
         <ProjectSection/>
         <FaqSection/>
+        <TestimonialsSection/>
         </main>
       {/* ---------------------------
         global  Footer
