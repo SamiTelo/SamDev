@@ -5,6 +5,7 @@ import { CompetenceSection } from "./components/compétence"
 import { CtaSection } from "./components/cta"
 import { ExperienceSection } from "./components/experience"
 import { FaqSection } from "./components/faq"
+import { Footer } from "./components/footer"
 import { Header } from "./components/header"
 import { HeroSection } from "./components/hero"
 import { ProjectSection } from "./components/project"
@@ -38,8 +39,7 @@ export const HomeView = () => {
       {/* ---------------------------
         global  Footer
       ---------------------------- */}
-        <footer>
-        </footer>
+        <Footer/>
         </>
     )
 }
