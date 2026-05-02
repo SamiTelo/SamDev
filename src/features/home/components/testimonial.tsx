@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Quote } from "lucide-react";
+import { Title } from "./title";
 
 const testimonials = [
   {
@@ -7,8 +8,7 @@ const testimonials = [
     name: "James Emily",
     role: "Residential Clients",
     image: "/assets/photo4.png",
-    text:
-      "At Builder Renderings, we specialize in delivering photorealistic 3D visualizations, modeling, and animation that bring your projects to life. With a focus on fast turnaround times and competitive pricing.",
+    text: "At Builder Renderings, we specialize in delivering photorealistic 3D visualizations, modeling, and animation that bring your projects to life. With a focus on fast turnaround times and competitive pricing.",
   },
 ];
 
@@ -35,33 +35,29 @@ const clients = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-26 px-4 font-sans">
+    <section className="py-26 px-4">
 
-      {/* Header */}
-      <div className="text-center mb-16 px-6 sm:px-10">
-        <span className="text-[#FF5722] font-medium text-sm md:text-lg tracking-wider">
-          Témoignages
-        </span>
-
-        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-6 md:mt-4 mb-6">
-          Ce Que Disent Mes Clients
-        </h2>
-
-        <p className="max-w-2xl mx-auto text-slate-500 text-sm md:text-base leading-relaxed">
-          Découvrez les retours de mes clients sur la qualité de mon travail et les projets que nous avons réalisés ensemble.
-        </p>
-      </div>
+      {/* Title */}
+      <Title
+        title="Témoignages"
+        heading="Ce Que Disent Mes Clients"
+        text=" Découvrez les retours de mes clients sur la qualité de mon travail et les projets que nous avons réalisés ensemble."
+      />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  gap-16 sm:gap-24 md:gap-10 items-center pl-6 sm:pl-10 md:pl-12 py-10 sm:py-18 md:py-18">
-
         {/* LEFT */}
         <div className="space-y-8">
           {testimonials.map((item) => (
             <div key={item.id}>
               <div className="flex items-center gap-6">
                 <div className="relative w-30 h-30 md:w-38 md:h-38 rounded-full overflow-hidden bg-white">
-                  <Image src={item.image} alt={item.name} fill className="object-cover" />
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
 
                 <div>
@@ -83,12 +79,16 @@ export const TestimonialsSection = () => {
 
         {/* RIGHT */}
         <div className="flex flex-col items-center lg:items-end pr-12">
-
           <div className="grid grid-cols-3 gap-6 mb-12">
             {clients.map((client) => (
               <div key={client.id} className="text-center">
                 <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-xl grayscale">
-                  <Image src={client.image} alt={client.name} fill className="object-cover" />
+                  <Image
+                    src={client.image}
+                    alt={client.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <h4 className="font-bold text-sm">{client.name}</h4>
                 <p className="text-[10px] text-gray-400">{client.role}</p>
@@ -103,7 +103,6 @@ export const TestimonialsSection = () => {
             <div className="h-0.5 flex-1 bg-black" />
           </div>
         </div>
-
       </div>
     </section>
   );
