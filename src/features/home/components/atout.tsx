@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Title } from "./title";
 
 const features = [
   {
@@ -34,17 +35,11 @@ export const AtoutSection = () => {
         {/*-------------------------------------------
             Title
         -----------------------------------------*/}
-        <div className="text-center mb-16">
-          <span className="text-[#FF5722] font-medium text-sm md:text-lg  tracking-wider">
-            Atouts
-          </span>
-          <h2 className=" text-3xl md:text-5xl font-bold text-slate-900 mt-6 md:mt-4 mb-6">
-            Ce Qui Fait la Différence
-          </h2>
-          <p className="max-w-2xl mx-auto text-slate-500 sm:text-[16px] md:text-[16px] text-sm leading-relaxed">
-            Mes atouts me permettent de proposer des solutions adaptées et un travail de qualité, sur web comme sur mobile.
-          </p>
-        </div>
+        <Title
+          title="Atouts"
+          heading="Ce Qui Fait la Différence"
+          text="Mes atouts me permettent de proposer des solutions adaptées et un travail de qualité, sur web comme sur mobile."
+        />
 
         {/*----------------------------------------------
                Main Content Grid 

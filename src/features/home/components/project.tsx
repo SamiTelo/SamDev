@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Github } from "lucide-react";
+import { Title } from "./title";
 
 const projects = [
   {
@@ -64,21 +65,13 @@ export const ProjectSection = () => {
   return (
     <section className="py-38 px-6 sm:px-10 min-h-screen">
       {/* Title */}
-      <div className="text-center mb-16">
-        <span className="text-[#FF5722] font-medium text-sm md:text-lg tracking-wider">
-          Portfolio
-        </span>
-
-        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-6 md:mt-4 mb-6">
-          Mes Récents Projets
-        </h2>
-
-        <p className="max-w-2xl mx-auto text-slate-500 sm:text-[16px] md:text-[16px] text-sm leading-relaxed">
-          Explorez mes projets, chacun reflétant ma passion pour le
-          développement, le design et l&apos;optimisation de solutions
-          performantes.
-        </p>
-      </div>
+      <Title
+        title="Portfolio"
+        heading="Mes Récents Projets"
+        text="Explorez mes projets, chacun reflétant ma passion pour le
+          développement, le design et l'optimisation de solutions
+          performantes."
+      />
 
       {/* Main Content Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-36 px-4">

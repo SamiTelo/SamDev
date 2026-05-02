@@ -1,23 +1,26 @@
 import React from "react";
 import { MapPin, Mail, Phone, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import { Title } from "../home/components/title";
 
 export const ContactSection = () => {
   return (
     <section className="py-48 px-6 sm:px-10 bg-white relative overflow-hidden">
-      {/* Header Section */}
-      <div className="max-w-4xl mx-auto text-center mb-16">
-        <h3 className="text-orange-600 font-medium mb-4">Contactez- Moi</h3>
-        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-6 md:mt-4 mb-6">
-          Donnez Vie à Vos Idées
-        </h2>
-        <p className="text-gray-500 leading-relaxed max-w-2xl mx-auto">
-          Besoin d&apos;un développeur passionné, créatif et rigoureux pour
-          donner un nouvel élan à vos projets et transformer vos idées en
-          solutions performantes ?<br />
-          n&apos;hésitez pas à me joindre !
-        </p>
-      </div>
+     
+      {/* Title */}
+      <Title
+        title="Contactez- Moi"
+        heading="Donnez Vie à Vos Idées"
+        text={
+          <>
+            Besoin d&apos;un développeur passionné, créatif et rigoureux pour
+            donner un nouvel élan à vos projets et transformer vos idées en
+            solutions performantes ?
+            <br />
+            N&apos;hésitez pas à me joindre !
+          </>
+        }
+      />
 
       {/*----------------------------------------------
                Main Content Grid 

@@ -1,5 +1,6 @@
 import { Server, Cpu, Waypoints, BarChart } from "lucide-react";
 import Image from "next/image";
+import { Title } from "./title";
 
 const skills = [
   { name: "Next.js", icon: "/assets/skills/nextjs.svg" },
@@ -39,20 +40,15 @@ export const SkillSection = () => {
   return (
     <section className="py-0 sm:py-18 md:py-30 bg-white">
       <div className="container mx-auto px-6 sm:px-10">
+        
         {/* Title */}
-        <div className="text-center mb-16">
-          <span className="text-[#FF5722] font-medium text-sm md:text-lg  tracking-wider">
-            Skills
-          </span>
-          <h2 className=" text-3xl md:text-5xl font-bold text-slate-900 mt-6 md:mt-4 mb-6">
-            Mes technologies
-          </h2>
-          <p className="max-w-2xl mx-auto text-slate-500 sm:text-[16px] md:text-[16px] text-sm leading-relaxed">
-            Un ensemble de compétences techniques et créatives me permettant de
+        <Title
+          title="Skills"
+          heading="Mes technologies"
+          text="Un ensemble de compétences techniques et créatives me permettant de
             concevoir des solutions web et mobiles modernes, responsives et
-            performantes.
-          </p>
-        </div>
+            performantes."
+        />
 
         {/* Main Content Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-30 sm:mt-38 md:mt-38">
