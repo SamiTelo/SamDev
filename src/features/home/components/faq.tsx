@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Plus, Minus } from "lucide-react";
 import { Title } from "./title";
+import Image from "next/image";
 
 const faqData = [
   {
@@ -48,8 +49,19 @@ const faqData = [
 
 export const FaqSection = () => {
   return (
-    <section className="py-20 sm:py-40 md:py-40 px-4 bg-[#f8f9fa]">
+    <section className="relative overflow-hidden py-20 sm:py-40 md:pt-40 px-4">
       
+      {/* IMAGE BG TOP RIGHT */}
+      <div className="absolute -top-20 md:top-0 -right-38 md:-right-24 -z-10 pointer-events-none">
+        <Image
+          src="/assets/bg-testi.svg"
+          alt=""
+          width={600}
+          height={600}
+          className="`w-75 md:w-112.5  md:h-80 h-50 animate-pulse"
+        />
+      </div>
+
       {/* Title */}
       <Title
         title="FAQs"
@@ -83,7 +95,7 @@ export const FaqSection = () => {
 const FaqItem = ({ item }: { item: (typeof faqData)[0] }) => (
   <AccordionItem
     value={item.id}
-    className="bg-white rounded-[2rem] border-3 border-transparent px-8 py-2 overflow-hidden transition-colors duration-300 data-[state=open]:bg-[#DDF5E6] data-[state=open]:border-white"
+    className="bg-[#F6F9FC] rounded-[2rem] border-3 border-transparent px-8 py-2 overflow-hidden transition-colors duration-300 data-[state=open]:bg-[#DDF5E6] data-[state=open]:border-white"
   >
     <AccordionTrigger className="hover:no-underline text-lg font-semibold text-left py-5 sm:py-6 md:py-6 group [&>svg]:hidden">
       <div className="flex items-center justify-between w-full">

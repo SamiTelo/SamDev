@@ -38,9 +38,20 @@ const skills = [
 
 export const SkillSection = () => {
   return (
-    <section className="py-0 sm:py-18 md:py-30 bg-white">
+    <section className="relative overflow-hidden py-0 sm:py-18 md:py-30">
+      
+      {/* IMAGE BG TOP RIGHT */}
+      <div className="absolute -top-20 md:top-0 -right-38 md:-right-14 -z-10 pointer-events-none">
+        <Image
+          src="/assets/project-bg.svg"
+          alt=""
+          width={600}
+          height={600}
+          className="`w-75 md:w-112.5  md:h-50 h-50 animate-pulse"
+        />
+      </div>
+
       <div className="container mx-auto px-6 sm:px-10">
-        
         {/* Title */}
         <Title
           title="Skills"
