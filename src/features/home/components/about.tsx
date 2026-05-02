@@ -12,7 +12,7 @@ export const AboutSection = () => {
           alt=""
           width={600}
           height={600}
-          className="`w-75 md:w-112.5 lg:w-137.5  md:h-100 h-auto"
+          className="w-75 md:w-112.5 lg:w-137.5  md:h-100 h-auto"
         />
       </div>
 

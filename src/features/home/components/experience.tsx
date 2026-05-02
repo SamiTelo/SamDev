@@ -26,13 +26,13 @@ const experiences = [
 
 export const ExperienceSection = () => {
   return (
-    <section className="pb-36 sm:pb-40 md:pb-40 pt-22 sm:pt-40 md:pt-40 px-6 bg-cover bg-center bg-[url('/assets/exp-bg.webp')]">
+    <section className="pb-36 sm:pb-40 md:pb-40 pt-22 sm:pt-40 md:pt-40 px-6 bg-cover bg-center bg-[url('/assets/bg-project.png')]">
+
 
       {/*-------------------------------------------------------
          Main Content Grid
     --------------------------------------------------------*/}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-28 md:gap-12 items-center">
-
         {/*-------------------------------------------
            Bloc left
         ----------------------------------------*/}
@@ -47,7 +47,7 @@ export const ExperienceSection = () => {
             Voici un aperçu de mes expériences, illustrant mon savoir-faire et
             ma capacité à mener des projets à succès.
           </p>
-          <button className="bg-orange-600 text-white md:text-[16px] text-sm mt-4 px-8 py-3 rounded-full font-semibold hover:bg-orange-700 transition-all shadow-lg shadow-orange-200 active:scale-95">
+          <button className="bg-[#FF5722] text-white md:text-[16px] text-sm mt-4 px-8 py-3 rounded-full font-semibold hover:bg-orange-700 transition-all shadow-lg shadow-orange-200 active:scale-95">
             Mon CV
           </button>
         </div>
@@ -59,7 +59,7 @@ export const ExperienceSection = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-white px-8 pt-10 pb-12 md:pt-8 md:pb-8 rounded-xl flex flex-col sm:flex-row gap-6 items-start hover:shadow-md transition-all"
+              className="bg-white px-8 pt-10 pb-12 md:pt-8 md:pb-8 rounded-xl flex flex-col sm:flex-row gap-6  items-start hover:shadow-md transition-all"
             >
               {/* Icon image */}
               <div className="p-4 rounded-full shrink-0 relative w-18 h-18">
@@ -79,7 +79,7 @@ export const ExperienceSection = () => {
 
                 <div className="flex flex-wrap items-center gap-2 text-sm mb-4">
                   <span className="text-slate-500">{exp.period}</span>
-                  <span className="text-orange-600 font-bold">
+                  <span className="text-[#FF5722] font-bold">
                     • {exp.company}
                   </span>
                 </div>

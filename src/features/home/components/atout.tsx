@@ -51,7 +51,7 @@ export const AtoutSection = () => {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-white px-12 pb-11 md:pb-16 pt-12 rounded-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:scale-[1.02]"
+              className="bg-white px-12 pb-11 md:pb-14 pt-12 rounded-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:scale-[1.02]"
             >
               <div className="relative w-18 h-18 md:w-22 md:h-22 mb-6">
                 <Image

@@ -35,7 +35,18 @@ const clients = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-26 px-4">
+    <section className="relative overflow-hidden pt-20 pb-24 px-4 ">
+
+      {/* IMAGE BG TOP LEFT */}
+      <div className="absolute -top-22 md:top-0 -left-56 md:-left-30 -z-10 pointer-events-none">
+        <Image
+          src="/assets/bg-testi.svg"
+          alt=""
+          width={600}
+          height={600}
+          className="`w-75 md:w-112.5 md:h-80 h-50 animate-pulse"
+        />
+      </div>
 
       {/* Title */}
       <Title
@@ -47,11 +58,11 @@ export const TestimonialsSection = () => {
       {/* Main Content */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  gap-16 sm:gap-24 md:gap-10 items-center pl-6 sm:pl-10 md:pl-12 py-10 sm:py-18 md:py-18">
         {/* LEFT */}
-        <div className="space-y-8">
+        <div className="space-y-8 bg-[#F6F9FC] p-10 rounded-2xl">
           {testimonials.map((item) => (
             <div key={item.id}>
               <div className="flex items-center gap-6">
-                <div className="relative w-30 h-30 md:w-38 md:h-38 rounded-full overflow-hidden bg-white">
+                <div className="relative w-30 h-30 md:w-36 md:h-36 rounded-full overflow-hidden bg-white">
                   <Image
                     src={item.image}
                     alt={item.name}

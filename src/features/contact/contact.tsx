@@ -5,8 +5,8 @@ import { Title } from "../home/components/title";
 
 export const ContactSection = () => {
   return (
-    <section className="py-48 px-6 sm:px-10 bg-white relative overflow-hidden">
-     
+    <section className="pt-48 pb-38 px-6 sm:px-10 relative overflow-hidden">
+
       {/* Title */}
       <Title
         title="Contactez- Moi"
@@ -111,13 +111,13 @@ export const ContactSection = () => {
       </div>
 
       {/* Decorative dots in bottom right (optional) */}
-      <div className="absolute bottom-8 sm:-bottom-10 md:-bottom-30 right-0 pointer-events-none">
+      <div className="absolute -8 bottom-0 md:-bottom-30 right-0 pointer-events-none">
         <Image
           src="/assets/contact-bg.svg"
           alt=""
           width={600}
           height={600}
-          className="w-45 sm:w-50 md:w-50 lg:w-50 md:h-125 h-auto animate-pulse"
+          className="w-45 sm:w-50 md:w-50 md:h-125 h-50 animate-pulse"
         />
       </div>
     </section>

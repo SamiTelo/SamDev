@@ -41,29 +41,12 @@ const projects = [
     demoUrl: "https://dashboard-football-club.vercel.app",
     githubUrl: "https://github.com/SamiTelo/dashboard-football-club",
   },
-  {
-    id: 3,
-    title: "API service gestion club football",
-    description:
-      "API backend sécurisée (NestJS, Prisma, PostgreSQL) avec JWT et gestion des rôles, incluant modules métier, monitoring et suivi d’erreurs.",
-    image: "/assets/swagger-api.png",
-    skills: [
-      "/assets/skills/typescript-icon.svg",
-      "/assets/skills/nestjs.svg",
-      "/assets/skills/nodejs-icon.svg",
-      "/assets/skills/prisma-icon.svg",
-      "/assets/skills/postgresql-icon.svg",
-      "/assets/skills/swagger-icon.svg",
-      "/assets/skills/docker-icon.svg",
-    ],
-    demoUrl: "https://api-football-gfpz.onrender.com/docs",
-    githubUrl: "https://github.com/SamiTelo/API-Football",
-  },
 ];
 
 export const ProjectSection = () => {
   return (
-    <section className="py-38 px-6 sm:px-10 min-h-screen">
+    <section className="relative overflow-hidden pt-38 pb-20 md:pb-30 px-6 sm:px-10 min-h-screen">
+      
       {/* Title */}
       <Title
         title="Portfolio"
@@ -73,15 +56,26 @@ export const ProjectSection = () => {
           performantes."
       />
 
+      {/* IMAGE BG TOP LEFT */}
+            <div className="absolute top-10 md:top-30 -left-50 md:-left-30 -z-10 pointer-events-none">
+              <Image
+                src="/assets/project-bg.svg"
+                alt=""
+                width={600}
+                height={600}
+                className="`w-75 md:w-112.5 md:h-50 h-30 animate-pulse"
+              />
+            </div>
+
       {/* Main Content Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-36 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-28 md:mt-38 px-0 md:px-27">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="relative overflow-hidden rounded-4xl px-4 pt-4 pb-10 bg-[#F6F9FC] border border-gray-100"
+            className="relative overflow-hidden rounded-4xl px-4 pt-4 pb-8 md:pb-10 bg-[#F6F9FC] border border-gray-100"
           >
             {/* Image */}
-            <div className="relative h-64 w-full overflow-hidden rounded-xl">
+            <div className="relative h-54 md:h-64 w-full overflow-hidden rounded-xl">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -91,7 +85,7 @@ export const ProjectSection = () => {
             </div>
 
             {/* Content */}
-            <div className="mt-11 space-y-4 px-2">
+            <div className="mt-8 md:mt-11 space-y-4 px-2">
               <h3 className="text-xl font-bold text-gray-900">
                 {project.title}
               </h3>
@@ -101,7 +95,7 @@ export const ProjectSection = () => {
               </p>
 
               {/* Skills empilés */}
-              <div className="flex items-center -space-x-3 mt-5">
+              <div className="flex items-center -space-x-3 mt-6">
                 {project.skills.slice(0, 11).map((skill, index) => (
                   <div
                     key={index}
@@ -118,12 +112,12 @@ export const ProjectSection = () => {
                 ))}
               </div>
 
-              <div className="flex items-center justify-between pt-4">
+              <div className="flex items-center justify-between pt-2 md:pt-4">
                 <a
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-10 sm:px-40 md:px-30 py-2.5 rounded-full text-sm font-semibold bg-black text-white"
+                  className="px-20 sm:px-40 md:px-38 py-3.5 rounded-full text-sm font-semibold bg-black text-white"
                 >
                   Demo
                 </a>
@@ -132,7 +126,7 @@ export const ProjectSection = () => {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full border bg-white border-white text-orange-500"
+                  className="p-4 rounded-full border bg-white border-white text-orange-500  hover:text-black"
                 >
                   <Github size={20} />
                 </a>
