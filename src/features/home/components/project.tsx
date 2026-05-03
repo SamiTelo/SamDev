@@ -117,7 +117,7 @@ export const ProjectSection = () => {
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-20 sm:px-40 md:px-38 py-3.5 rounded-full text-sm font-semibold bg-black text-white"
+                  className="px-20 sm:px-40 md:px-38 py-3 rounded-full text-sm font-semibold bg-black text-white"
                 >
                   Demo
                 </a>
@@ -126,7 +126,7 @@ export const ProjectSection = () => {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-full border bg-white border-white text-orange-500  hover:text-black"
+                  className="p-3.5 rounded-full border bg-white border-white text-orange-500  hover:text-black"
                 >
                   <Github size={20} />
                 </a>

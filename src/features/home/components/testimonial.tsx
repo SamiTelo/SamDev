@@ -57,7 +57,7 @@ export const TestimonialsSection = () => {
       />
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  gap-16 sm:gap-24 md:gap-10 items-center pl-0 sm:pl-0 md:pl-12 py-10 sm:py-18 md:py-18">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  gap-20 sm:gap-24 md:gap-10 items-center pl-0 sm:pl-0 md:pl-12 py-10 sm:py-18 md:py-18">
         {/* LEFT */}
         <div className="space-y-8 bg-[#F6F9FC] p-7 md:p-10 rounded-2xl">
           {testimonials.map((item) => (
