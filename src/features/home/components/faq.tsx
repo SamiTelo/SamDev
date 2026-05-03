@@ -49,8 +49,7 @@ const faqData = [
 
 export const FaqSection = () => {
   return (
-    <section className="relative overflow-hidden py-20 sm:py-40 md:pt-40 px-4">
-      
+    <section className="relative overflow-hidden py-20 sm:py-40 md:pt-40 px-6 sm:px-10">
       {/* IMAGE BG TOP RIGHT */}
       <div className="absolute -top-20 md:top-0 -right-38 md:-right-24 -z-10 pointer-events-none">
         <Image
@@ -72,9 +71,14 @@ export const FaqSection = () => {
       {/*----------------------------------------------
                 Main Content Grid 
         ----------------------------------------------------*/}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-2 pt-10 sm:pt-20 md:pt-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 pt-10 sm:pt-20 md:pt-20">
         {/* Colonne Gauche */}
-        <Accordion type="single" collapsible className="w-full space-y-4">
+        <Accordion
+          type="single"
+          collapsible
+          defaultValue="item-1"
+          className="w-full space-y-4"
+        >
           {faqData.slice(0, 3).map((item) => (
             <FaqItem key={item.id} item={item} />
           ))}
