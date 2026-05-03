@@ -1,41 +1,42 @@
 import Image from "next/image";
-import { Quote } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 import { Title } from "./title";
 
 const testimonials = [
   {
-    id: 1,
-    name: "James Emily",
-    role: "Residential Clients",
-    image: "/assets/photo4.png",
-    text: "At Builder Renderings, we specialize in delivering photorealistic 3D visualizations, modeling, and animation that bring your projects to life. With a focus on fast turnaround times and competitive pricing.",
-  },
+  id: 1,
+  name: "James Emine",
+  role: "CEO, Digital Marketing Agency",
+  image: "/assets/photo4.png",
+  rating: 5,
+  text: "Nous avons collaboré avec Samuel sur le développement de notre site web, et le résultat a dépassé nos attentes. Il a su comprendre nos besoins et livrer une solution moderne, rapide et parfaitement responsive. Professionnel, rigoureux et fiable, il respecte toujours les délais.",
+}
 ];
 
 const clients = [
   {
-    id: 1,
-    name: "James Emily",
-    role: "Residential",
-    image: "/assets/photo2.png",
-  },
-  {
-    id: 2,
-    name: "James Emily",
-    role: "Residential",
-    image: "/assets/photo3.png",
-  },
-  {
-    id: 3,
-    name: "James Emily",
-    role: "Residential",
-    image: "/assets/photo1.png",
-  },
+  id: 1,
+  name: "James Walker",
+  role: "CEO",
+  image: "/assets/photo2.png",
+},
+{
+  id: 2,
+  name: "Sarah Johnson",
+  role: "Manager",
+  image: "/assets/photo3.png",
+},
+{
+  id: 3,
+  name: "Fatim Bamba",
+  role: "Fondatrice",
+  image: "/assets/photo1.png",
+},
 ];
 
 export const TestimonialsSection = () => {
   return (
-    <section className="relative overflow-hidden pt-20 pb-24 px-4 ">
+    <section className="relative overflow-hidden pt-20 pb-24 px-6 sm:px-10 ">
 
       {/* IMAGE BG TOP LEFT */}
       <div className="absolute -top-22 md:top-0 -left-56 md:-left-30 -z-10 pointer-events-none">
@@ -56,9 +57,9 @@ export const TestimonialsSection = () => {
       />
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  gap-16 sm:gap-24 md:gap-10 items-center pl-6 sm:pl-10 md:pl-12 py-10 sm:py-18 md:py-18">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2  gap-16 sm:gap-24 md:gap-10 items-center pl-0 sm:pl-0 md:pl-12 py-10 sm:py-18 md:py-18">
         {/* LEFT */}
-        <div className="space-y-8 bg-[#F6F9FC] p-10 rounded-2xl">
+        <div className="space-y-8 bg-[#F6F9FC] p-7 md:p-10 rounded-2xl">
           {testimonials.map((item) => (
             <div key={item.id}>
               <div className="flex items-center gap-6">
@@ -74,6 +75,14 @@ export const TestimonialsSection = () => {
                 <div>
                   <h3 className="text-2xl font-bold">{item.name}</h3>
                   <p className="text-gray-500 font-medium">{item.role}</p>
+                   <div className="flex flex-row mt-2 space-x-1 md:space-x-2">
+                  {[...Array(item.rating)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="w-3 h-3 md:w-4 md:h-4 text-yellow-500 fill-yellow-500 stroke-0"
+                    />
+                  ))}
+                </div>
                 </div>
 
                 <div className="ml-auto opacity-10">
@@ -81,7 +90,7 @@ export const TestimonialsSection = () => {
                 </div>
               </div>
 
-              <p className="text-gray-600 leading-relaxed max-w-lg text-sm md:text-base mt-6">
+              <p className="text-gray-600 leading-relaxed max-w-lg text-sm md:text-base mt-4">
                 {item.text}
               </p>
             </div>
@@ -89,7 +98,7 @@ export const TestimonialsSection = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="flex flex-col items-center lg:items-end pr-12">
+        <div className="flex flex-col items-center lg:items-end pr-0 md:pr-12">
           <div className="grid grid-cols-3 gap-6 mb-12">
             {clients.map((client) => (
               <div key={client.id} className="text-center">

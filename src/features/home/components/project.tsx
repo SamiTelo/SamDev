@@ -75,7 +75,7 @@ export const ProjectSection = () => {
             className="relative overflow-hidden rounded-4xl px-4 pt-4 pb-8 md:pb-10 bg-[#F6F9FC] border border-gray-100"
           >
             {/* Image */}
-            <div className="relative h-54 md:h-64 w-full overflow-hidden rounded-xl">
+            <div className="relative h-54 sm:h-64 md:h-64 w-full overflow-hidden rounded-xl ">
               <Image
                 src={project.image}
                 alt={project.title}

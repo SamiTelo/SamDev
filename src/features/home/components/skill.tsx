@@ -1,4 +1,4 @@
-import { Server, Cpu, Waypoints, BarChart } from "lucide-react";
+import { Cpu, Waypoints, BarChart } from "lucide-react";
 import Image from "next/image";
 import { Title } from "./title";
 
@@ -19,12 +19,12 @@ const skills = [
   { name: "Mysql", icon: "/assets/skills/mysql-icon.svg" },
   { name: "postgreSQL", icon: "/assets/skills/postgresql-icon.svg" },
   { name: "Prisma", icon: "/assets/skills/prisma-icon.svg" },
+  { name: "Firebase", icon: "/assets/skills/firebase-icon.svg" },
   { name: "Github", icon: "/assets/skills/github-icon.svg" },
   { name: "Git", icon: "/assets/skills/git-icon.svg" },
   { name: "Postman", icon: "/assets/skills/postman-icon.svg" },
   { name: "Swagger", icon: "/assets/skills/swagger-icon.svg" },
   { name: "Docker", icon: "/assets/skills/docker-icon.svg" },
-  { name: "Serveur", icon: <Server className="w-10 h-10 text-gray-700" /> },
   { name: "Rest API", icon: <Waypoints className="w-10 h-10 text-gray-700" /> },
   {
     name: "Monitoring",
@@ -47,7 +47,7 @@ export const SkillSection = () => {
           alt=""
           width={600}
           height={600}
-          className="`w-75 md:w-112.5  md:h-50 h-50 animate-pulse"
+          className="`w-75 md:w-112.5  md:h-50 h-46 animate-pulse"
         />
       </div>
 

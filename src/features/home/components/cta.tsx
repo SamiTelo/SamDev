@@ -3,11 +3,11 @@ import { ArrowUpRight } from 'lucide-react';
 
 export const CtaSection = () => {
   return (
-    <section className="py-12 px-4 w-full bg-cover bg-center bg-[url('/assets/bg-cta.svg')] rounded-3xl my-20">
+    <section className="pt-12 pb-0 px-6 sm:px-10 w-full bg-cover bg-center bg-[url('/assets/bg-cta.svg')] rounded-3xl my-20">
       {/*----------------------------------------------
            Main Content Grid 
         ----------------------------------------------------*/}
-      <div className="max-w-7xl mx-auto  pb-4 grid grid-cols-1 md:grid-cols-[1.4fr_1.2fr] gap-16 md:gap-0 items-center overflow-hidden px-0 sm:px-12 md:px:18">
+      <div className="max-w-7xl mx-auto pb-0  md:pb-20 grid grid-cols-1 md:grid-cols-[1.4fr_1.2fr] gap-16 md:gap-0 items-center overflow-hidden px-0 sm:px-12 md:px:18">
         
         {/* ----------------------------------------
              BLOC GAUCHE : Texte & Formulaire
@@ -41,17 +41,17 @@ export const CtaSection = () => {
            ----------------------------------------------- */}
         <div className="relative h-75 flex items-center justify-center lg:justify-end mr-0 sm:mr-18 md:mr-6">
           {/* Bulle Projets Front-end */}
-          <div className="absolute top-0 right-24 md:right-40 w-48 h-48 md:w-56 md:h-56 bg-[#388E7B] rounded-full flex flex-col items-center justify-center text-white  z-10 border border-white/10">
+          <div className="absolute top-0 right-38 md:right-40 w-48 h-48 md:w-56 md:h-56 bg-[#388E7B] rounded-full flex flex-col items-center justify-center text-white  z-10 border border-white/10">
             <span className="text-5xl font-extrabold ml-8">15 +</span>
-            <span className="text-center mt-6 font-light leading-tight">
+            <span className="text-center sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm mt-6 font-light leading-tight">
               Projets<br/>Front-end
             </span>
           </div>
 
           {/* Bulle Projets Back-end */}
-          <div className="absolute -bottom-2 right-4 md:right-4 w-48 h-48 md:w-56 md:h-56 bg-[#2D6A5D] rounded-full flex flex-col items-center justify-center text-white  z-20 border border-white/10">
+          <div className="absolute bottom-26 md:-bottom-2 right-0 md:right-4 w-48 h-48 md:w-56 md:h-56 bg-[#2D6A5D] rounded-full flex flex-col items-center justify-center text-white  z-20 border border-white/10">
             <span className="text-5xl font-extrabold ml-8">10 +</span>
-            <span className="text-center mt-6 font-light leading-tight">
+            <span className="text-center sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm mt-6 font-light leading-tight">
               Projets<br/>Back-end
             </span>
           </div>
