@@ -46,7 +46,7 @@ export const CtaSection = () => {
         <div className="relative h-75 flex items-center justify-center lg:justify-end mr-0 sm:mr-18 md:mr-6">
           {/* Bulle Projets Front-end */}
           <div className="absolute top-0 right-38 md:right-40 w-48 h-48 md:w-56 md:h-56 bg-[#388E7B] rounded-full flex flex-col items-center justify-center text-white  z-10 border border-white/10">
-            <span className="text-5xl font-extrabold ml-6 md:ml-8">15 +</span>
+            <span className="text-5xl font-extrabold ml-6 md:ml-8">12 +</span>
             <span className="text-center sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm mt-6 font-light leading-tight">
               Projets
               <br />

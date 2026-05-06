@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const AboutSection = () => {
   return (
-    <section className="relative overflow-hidden pt-16 pb-42 px-6 sm:px-10 lg:px-12 -mt-30 md:-mt-30 sm:mt-8">
+    <section id="about" className="relative overflow-hidden pt-16 pb-42 px-6 sm:px-10 lg:px-12 -mt-30 md:-mt-30 sm:mt-8">
       
     {/* IMAGE BG TOP RIGHT */}
       <div className="absolute top-0 right-0 -z-10 pointer-events-none">

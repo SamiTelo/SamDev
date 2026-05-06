@@ -47,7 +47,7 @@ npm run dev
 ## Contact
 
 - Email: [samueltiemtore10@gmail.com](mailto:samueltiemtore10@gmail.com)
-- GitHub : https://github.com/SamiTelo
+- Tel: +2250596085643
 
 ## Licence
 

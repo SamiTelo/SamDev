@@ -19,11 +19,12 @@ export const NavBar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-sm">
-              <a href="#" className="text-[#FF5722]">Home</a>
-              <a href="#" className="hover:text-[#FF5722] transition-colors">About</a>
-              <a href="#" className="hover:text-[#FF5722] transition-colors">Compétences</a>
-              <a href="#" className="hover:text-[#FF5722] transition-colors">Expériences</a>
-              <a href="#" className="hover:text-[#FF5722] transition-colors">Portfolio</a>
+              <a href="#hero" className="text-[#FF5722]">Home</a>
+              <a href="#about" className="hover:text-[#FF5722] transition-colors">About</a>
+              <a href="#competence" className="hover:text-[#FF5722] transition-colors">Compétences</a>
+              <a href="#experience" className="hover:text-[#FF5722] transition-colors">Expériences</a>
+              <a href="#project" className="hover:text-[#FF5722] transition-colors">Portfolio</a>
+              <a href="#contact" className="hover:text-[#FF5722] transition-colors">Contact</a>
         </div>
 
         {/* Desktop Button */}

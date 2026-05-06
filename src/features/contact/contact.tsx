@@ -5,7 +5,7 @@ import { Title } from "../home/components/title";
 
 export const ContactSection = () => {
   return (
-    <section className="pt-30 md:pt-48 pb-38 px-6 sm:px-10 relative overflow-hidden">
+    <section id="contact" className="pt-30 md:pt-48 pb-38 px-6 sm:px-10 relative overflow-hidden">
 
       {/* Title */}
       <Title

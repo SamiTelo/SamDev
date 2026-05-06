@@ -30,7 +30,7 @@ const skills = [
 
 export const CompetenceSection = () => {
   return (
-    <section className="pt-0 md:sm:pt-20 sm:pt-20 pb-16 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white">
+    <section id="competence" className="pt-0 md:sm:pt-20 sm:pt-20 pb-16 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white">
 
       {/* Title */}
       <Title
