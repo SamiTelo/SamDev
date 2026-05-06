@@ -29,7 +29,7 @@ const features = [
 
 export const AtoutSection = () => {
   return (
-    <section className="py-16 px-6 sm:px-10 bg-slate-50 bg-cover bg-center bg-[url('/assets/atout-bg.webp')]">
+    <section id="atout" className="py-16 px-6 sm:px-10 bg-slate-50 bg-cover bg-center bg-[url('/assets/atout-bg.webp')]">
       <div className="max-w-5xl mx-auto text-center">
 
         {/*-------------------------------------------

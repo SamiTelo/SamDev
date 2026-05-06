@@ -43,11 +43,12 @@ export function SheetSide() {
               </SheetDescription>
             </SheetHeader>
             <div className="flex flex-col gap-6 p-6 text-sm no-scrollbar overflow-y-auto px-4">
-              <a href="#" className="text-[#FF5722]">Home</a>
-              <a href="#" className="hover:text-[#FF5722] transition-colors">About</a>
-              <a href="#" className="hover:text-[#FF5722] transition-colors">Compétences</a>
-              <a href="#" className="hover:text-[#FF5722] transition-colors">Expériences</a>
-              <a href="#" className="hover:text-[#FF5722] transition-colors">Portfolio</a>
+              <a href="#hero" className="text-[#FF5722]">Home</a>
+              <a href="#about" className="hover:text-[#FF5722] transition-colors">About</a>
+              <a href="#competence" className="hover:text-[#FF5722] transition-colors">Compétences</a>
+              <a href="#experience" className="hover:text-[#FF5722] transition-colors">Expériences</a>
+              <a href="#project" className="hover:text-[#FF5722] transition-colors">Portfolio</a>
+              <a href="#contact" className="hover:text-[#FF5722] transition-colors">Contact</a>
 
               <div className="border-t border-slate-200 mt-3 pt-3"></div>
             </div>
