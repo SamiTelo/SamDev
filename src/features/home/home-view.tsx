@@ -1,4 +1,4 @@
-import { ContactSection } from "../contact/contact"
+import { ContactSection } from "../contact/components/contact"
 import { AboutSection } from "./components/about"
 import { AtoutSection } from "./components/atout"
 import { CompetenceSection } from "./components/compétence"
