@@ -3,8 +3,8 @@
 import React from "react";
 import { MapPin, Mail, Phone, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import { Title } from "../home/components/title";
-import { useContactForm } from "./hooks/useContactForm";
+import { Title } from "../../home/components/title";
+import { useContactForm } from "../hooks/useContactForm";
 import { Spinner } from "@/components/ui/spinner";
 
 export const ContactSection = () => {
