@@ -46,7 +46,10 @@ const experiences = [
 
 export const ExperienceSection = () => {
   return (
-    <section id="experience" className="pb-36 sm:pb-40 md:pb-40 pt-22 sm:pt-40 md:pt-40 px-6 bg-cover bg-center bg-[url('/assets/bg-project.png')]">
+    <section
+      id="experience"
+      className="pb-36 sm:pb-40 md:pb-40 pt-22 sm:pt-40 md:pt-40 px-6 bg-cover bg-center bg-[url('/assets/bg-project.png')]"
+    >
       {/*-------------------------------------------------------
          Main Content Grid
     --------------------------------------------------------*/}
@@ -65,9 +68,15 @@ export const ExperienceSection = () => {
             Voici un aperçu de mes expériences, illustrant mon savoir-faire et
             ma capacité à mener des projets à succès.
           </p>
-          <button className="bg-[#FF5722] text-white md:text-[16px] text-sm mt-4 px-8 py-3 rounded-full font-semibold hover:bg-black shadow-lg shadow-orange-200  hover:shadow-black/50 transition-all duration-300 transform hover:scale-105">
+          <a
+            href="/assets/cv/CV_TIEMTORE_SAMUEL.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FF5722] text-white md:text-[16px] text-sm mt-4 px-8 py-3 rounded-full font-semibold hover:bg-black shadow-lg shadow-orange-200  hover:shadow-black/50 transition-all duration-300 transform hover:scale-105"
+          >
             Mon CV
-          </button>
+          </a>
         </div>
 
         {/*-----------------------------------------------
