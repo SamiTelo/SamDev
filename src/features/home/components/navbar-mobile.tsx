@@ -43,21 +43,57 @@ export function SheetSide() {
               </SheetDescription>
             </SheetHeader>
             <div className="flex flex-col gap-6 p-6 text-sm no-scrollbar overflow-y-auto px-4">
-              <a href="#hero" className="text-[#FF5722]">Home</a>
-              <a href="#about" className="hover:text-[#FF5722] transition-colors">About</a>
-              <a href="#competence" className="hover:text-[#FF5722] transition-colors">Compétences</a>
-              <a href="#experience" className="hover:text-[#FF5722] transition-colors">Expériences</a>
-              <a href="#project" className="hover:text-[#FF5722] transition-colors">Portfolio</a>
-              <a href="#contact" className="hover:text-[#FF5722] transition-colors">Contact</a>
+              <a href="#hero" className="text-[#FF5722]">
+                Home
+              </a>
+              <a
+                href="#about"
+                className="hover:text-[#FF5722] transition-colors"
+              >
+                About
+              </a>
+              <a
+                href="#competence"
+                className="hover:text-[#FF5722] transition-colors"
+              >
+                Compétences
+              </a>
+              <a
+                href="#experience"
+                className="hover:text-[#FF5722] transition-colors"
+              >
+                Expériences
+              </a>
+              <a
+                href="#project"
+                className="hover:text-[#FF5722] transition-colors"
+              >
+                Portfolio
+              </a>
+              <a
+                href="#contact"
+                className="hover:text-[#FF5722] transition-colors"
+              >
+                Contact
+              </a>
 
               <div className="border-t border-slate-200 mt-3 pt-3"></div>
             </div>
             <SheetFooter>
-              <Button className="rounded-full border h-10 px-6 py-2 text-sm font-semibold text-white transition-all hover:bg-orange-500 bg-black">
+              <a
+                href="/assets/cv/CV_TIEMTORE_SAMUEL.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border h-10 px-6 py-2 text-sm font-semibold text-white transition-all hover:bg-orange-500 bg-black"
+              >
                 Download CV
-              </Button>
+              </a>
               <SheetClose asChild>
-                <Button variant="outline"className="rounded-full h-10 px-6 py-2">
+                <Button
+                  variant="outline"
+                  className="rounded-full h-10 px-6 py-2"
+                >
                   Fermer
                 </Button>
               </SheetClose>

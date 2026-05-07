@@ -64,7 +64,7 @@ export default function  SuccessSection () {
         </div>
 
         {/* Sub-text */}
-        <p className="text-center text-gray-500 sm:text-[16px] md:text-[16px] text-sm leading-relaxed max-w-md">
+        <p className="text-center text-gray-500 sm:text-[16px] md:text-[18px] text-sm leading-relaxed max-w-md">
           Merci pour votre message. Je vous répondrai dans
           <br />
           les plus brefs délais.
