@@ -33,6 +33,50 @@ Ce portfolio me permet de :
 - Optimisation des performances (images WebP)
 - SEO optimisé
 
+## Screenshots
+
+| Hero | About |
+|-------|---------|
+| ![hero](./assets/screenshots/hero.png) | ![banner](./assets/screenshots/about.png) |
+| Expertises | Atouts |
+| ![about](./assets/screenshots/competence.png) | ![service](./assets/screenshots/atout.png) |
+| Expérience | Skills |
+| ![pricing](./assets/screenshots/experience.png) | ![faq](./assets/screenshots/faq.png) |
+| Project | Faq |
+| ![testimonial](./assets/screenshots/projet.png) | ![cta](./assets/screenshots/faq.png) |
+| Testimonial | Counter |
+| ![blog](./assets/screenshots/testimonial.png) | ![footer](./assets/screenshots/counter.png) |
+| contact |
+| ![blog](./assets/screenshots/contact.png) | 
+
+## Portfolio
+
+**lien web** :
+[sam-dev-portfolio-one.vercel.app](https://sam-dev-portfolio-one.vercel.app)
+
+## Project architecture
+
+
+```bash
+
+assets/              # screenshots  README
+
+components/          # composant UI globals
+
+public/
+└── assets/          # images et ressources
+
+src/
+├── app/             # routing et pages Next.js
+├── features/        # fonctionnalités 
+├── lib/             
+
+
+
+README.md            # projet docs
+
+```
+
 ## Installation du projet
 
 ```bash
