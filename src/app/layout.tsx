@@ -20,7 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className="font-sans antialiased min-h-screen" suppressHydrationWarning>
+      <head>
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="Ayp9qruQoBRawcPXXuji553u5itMff2mWlJiF1x3hHE" />
+      </head>
+
+      <body
+        className="font-sans antialiased min-h-screen"
+        suppressHydrationWarning
+      >
         {children}
         <SeoJsonLd />
       </body>
