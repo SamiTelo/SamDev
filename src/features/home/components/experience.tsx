@@ -69,7 +69,7 @@ export const ExperienceSection = () => {
             ma capacité à mener des projets à succès.
           </p>
           <a
-            href="/assets/cv/CV_TIEMTORE_SAMUEL.pdf"
+            href="/assets/cv/CV-SAMUEL-TIEMTORE.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
@@ -88,10 +88,7 @@ export const ExperienceSection = () => {
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="bg-white px-8 pt-10 pb-12 md:pt-8 md:pb-8 mt-3 mb-8 rounded-xl flex flex-col sm:flex-row gap-6  items-start  border border-white 
-  hover:border-[#f8774f]
-  hover:shadow-[0_0_20px_#f8774f]
-  transition duration-300"
+                className="bg-white px-8 pt-10 pb-12 md:pt-8 md:pb-8 mt-3 mb-8 rounded-xl flex flex-col sm:flex-row gap-6  items-start  border border-white hover:border-[#f8774f] hover:shadow-[0_0_20px_#f8774f] transition duration-300"
               >
                 {/* Icon image */}
                 <div className="p-4 rounded-full shrink-0 relative w-18 h-18">

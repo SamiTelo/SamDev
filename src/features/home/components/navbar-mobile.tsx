@@ -50,7 +50,7 @@ export function SheetSide() {
                 href="#about"
                 className="hover:text-[#FF5722] transition-colors"
               >
-                About
+                A propos
               </a>
               <a
                 href="#competence"
@@ -81,7 +81,7 @@ export function SheetSide() {
             </div>
             <SheetFooter>
               <a
-                href="/assets/cv/CV_TIEMTORE_SAMUEL.pdf"
+                href="/assets/cv/CV-SAMUEL-TIEMTORE.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
