@@ -28,11 +28,15 @@ export function SheetSide() {
               <Menu className="h-6 w-6 text-white" />
             </Button>
           </SheetTrigger>
+
+          {/* Content */}
           <SheetContent
             side={side}
             className="data-[side=bottom]:max-h-[50vh] data-[side=top]:max-h-[50vh]"
           >
-            <SheetHeader className="mt-10">
+            
+            {/* Header*/}
+            <SheetHeader className="mt-10 px-6">
               <SheetTitle>
                 <div className="flex items-center gap-2 font-bold tracking-wider">
                   SAM <span className="">DEV</span>
@@ -42,50 +46,56 @@ export function SheetSide() {
                 Développeur fullstack | UI/UX . Web . Mobile . DevOps
               </SheetDescription>
             </SheetHeader>
-            <div className="flex flex-col gap-6 p-6 text-sm no-scrollbar overflow-y-auto px-4">
-              <a href="#hero" className="text-[#FF5722]">
-                Home
-              </a>
-              <a
-                href="#about"
-                className="hover:text-[#FF5722] transition-colors"
-              >
-                A propos
-              </a>
-              <a
-                href="#competence"
-                className="hover:text-[#FF5722] transition-colors"
-              >
-                Compétences
-              </a>
-              <a
-                href="#experience"
-                className="hover:text-[#FF5722] transition-colors"
-              >
-                Expériences
-              </a>
-              <a
-                href="#project"
-                className="hover:text-[#FF5722] transition-colors"
-              >
-                Portfolio
-              </a>
-              <a
-                href="#contact"
-                className="hover:text-[#FF5722] transition-colors"
-              >
-                Contact
-              </a>
+             
+             {/* Main*/}
+            <main>
+              <div className="flex flex-col gap-6 p-6 text-sm no-scrollbar overflow-y-auto px-6">
+                <a href="#hero" className="text-[#FF5722]">
+                  Home
+                </a>
+                <a
+                  href="#about"
+                  className="hover:text-[#FF5722] transition-colors"
+                >
+                  A propos
+                </a>
+                <a
+                  href="#competence"
+                  className="hover:text-[#FF5722] transition-colors"
+                >
+                  Compétences
+                </a>
+                <a
+                  href="#experience"
+                  className="hover:text-[#FF5722] transition-colors"
+                >
+                  Expériences
+                </a>
+                <a
+                  href="#project"
+                  className="hover:text-[#FF5722] transition-colors"
+                >
+                  Portfolio
+                </a>
+                <a
+                  href="#contact"
+                  className="hover:text-[#FF5722] transition-colors"
+                >
+                  Contact
+                </a>
 
-              <div className="border-t border-slate-200 mt-3 pt-3"></div>
-            </div>
+                <div className="border-t border-slate-200 mt-3 pt-3"></div>
+              </div>
+            </main>
+
+            {/* Footer*/}
             <SheetFooter>
               <a
                 href="/assets/cv/CV-SAMUEL-TIEMTORE.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border h-10 px-6 py-2 text-sm font-semibold text-white transition-all hover:bg-orange-500 bg-black"
+                className="rounded-full border h-10 px-6 py-2 text-sm font-semibold text-white text-center transition-all hover:bg-[#FF5722] bg-black"
               >
                 Download CV
               </a>
