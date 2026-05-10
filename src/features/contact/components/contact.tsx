@@ -123,7 +123,7 @@ export const ContactSection = () => {
             <button
               type="submit"
               disabled={loading}
-              className="flex items-center gap-2 mt-3 text-white md:text-[16px] text-sm py-4 px-14 rounded-full bg-[#FF5722] hover:bg-black transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-200 hover:shadow-black/50 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="flex items-center gap-2 mt-4 text-white md:text-[16px] text-sm py-4 px-14 rounded-full bg-[#FF5722] hover:bg-black transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-200 hover:shadow-black/50 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <>

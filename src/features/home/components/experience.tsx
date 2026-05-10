@@ -73,7 +73,7 @@ export const ExperienceSection = () => {
             download
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#FF5722] text-white md:text-[16px] text-sm mt-4 px-8 py-3 rounded-full font-semibold hover:bg-black shadow-lg shadow-orange-200  hover:shadow-black/50 transition-all duration-300 transform hover:scale-105"
+            className="inline-block mt-4 text-white md:text-[16px] text-sm py-4 px-10 rounded-full bg-[#FF5722] hover:bg-black transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-200 hover:shadow-black/50"
           >
             Mon CV
           </a>
