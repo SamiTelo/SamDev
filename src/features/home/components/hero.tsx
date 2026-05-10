@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { Facebook, Linkedin, Rocket, Instagram} from "lucide-react";
+import { Facebook, Linkedin, Instagram, ArrowUpRight} from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -53,7 +53,7 @@ export const HeroSection = () => {
  
         {/* Buttom */}
         <div className="mt-8 flex flex-col items-center gap-6 md:flex-row md:justify-start md:gap-8">
-          <Link href="#services">
+          <Link href="#competence">
             <motion.div
               whileHover={{
                 scale: 1.05,
@@ -64,8 +64,9 @@ export const HeroSection = () => {
               transition={{ type: "spring", stiffness: 200, damping: 10 }}
               className="w-full md:w-auto inline-flex justify-center items-center gap-2 bg-[#F75023] text-white px-10 py-4 rounded-full md:text-[16px] text-sm"
             >
-              <Rocket className="w-4 h-4" />
+              <ArrowUpRight size={20} />
               Découvrir mes services
+              
             </motion.div>
           </Link>
 

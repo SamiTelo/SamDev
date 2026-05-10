@@ -12,7 +12,7 @@ export const Footer = () => {
         {/* ----------------------------------------
              BLOCS
            ----------------------------------------------- */}
-        <p className="text-center text-slate-500 text-sm md:text-base font-medium px-4 leading-relaxed">
+        <p className="text-center text-slate-400 text-sm md:text-base px-4 leading-relaxed">
           Developed and designed by <span className="text-slate-700 ml-1 font-bold">SAM</span>
           <span className="text-[#FF5722] ml-1 font-bold"> DEV</span>{" "}
           <Copyright size={14} className="inline mx-1 text-slate-400" />
