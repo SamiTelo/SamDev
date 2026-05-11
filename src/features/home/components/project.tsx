@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import Image from "next/image";
 import { Github } from "lucide-react";
 import { Title } from "./title";

@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -71,26 +73,37 @@ export const FaqSection = () => {
       {/*----------------------------------------------
                 Main Content Grid 
         ----------------------------------------------------*/}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 pt-10 sm:pt-20 md:pt-20">
+      <motion.div 
+       initial={{ y: 50, opacity: 0, scale: 0.95 }}
+        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{
+          duration: 1.5,
+          type: "spring",
+          stiffness: 100,
+          damping: 20,
+        }}
+      className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 pt-10 sm:pt-20 md:pt-20">
+
         {/* Colonne Gauche */}
-        <Accordion
-          type="single"
-          collapsible
-          defaultValue="item-1"
-          className="w-full space-y-4"
-        >
-          {faqData.slice(0, 3).map((item) => (
-            <FaqItem key={item.id} item={item} />
-          ))}
-        </Accordion>
+          <Accordion
+            type="single"
+            collapsible
+            defaultValue="item-1"
+            className="w-full space-y-4"
+          >
+            {faqData.slice(0, 3).map((item) => (
+              <FaqItem key={item.id} item={item} />
+            ))}
+          </Accordion>
 
         {/* Colonne Droite */}
-        <Accordion type="single" collapsible className="w-full space-y-4">
-          {faqData.slice(3, 6).map((item) => (
-            <FaqItem key={item.id} item={item} />
-          ))}
-        </Accordion>
-      </div>
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {faqData.slice(3, 6).map((item) => (
+              <FaqItem key={item.id} item={item} />
+            ))}
+          </Accordion>
+      </motion.div>
     </section>
   );
 };
