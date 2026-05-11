@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -57,7 +57,18 @@ export const ExperienceSection = () => {
         {/*-------------------------------------------
            Bloc left
         ----------------------------------------*/}
-        <div className="space-y-6 -mt-10 md:-mt-32 px-6 text-center sm:text-left md:text-left">
+        <motion.div
+          initial={{ x: -50, opacity: 0, scale: 0.95 }}
+          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+          }}
+          className="space-y-6 -mt-10 md:-mt-32 px-6 text-center sm:text-left md:text-left"
+        >
           <span className="text-[#FF5722] font-medium text-sm md:text-lg  tracking-wider">
             A propos
           </span>
@@ -77,61 +88,72 @@ export const ExperienceSection = () => {
           >
             Mon CV
           </a>
-        </div>
+        </motion.div>
 
         {/*-----------------------------------------------
            Bloc right
         ------------------------------------------------------*/}
-
-        <ScrollArea className="h-96 md:h-116">
-          <div className="space-y-6 sm:px-6">
-            {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className="bg-white px-8 pt-10 pb-12 md:pt-8 md:pb-8 mt-3 mb-8 rounded-xl flex flex-col sm:flex-row gap-6  items-start  border border-white hover:border-[#f8774f] hover:shadow-[0_0_20px_#f8774f] transition duration-300"
-              >
-                {/* Icon image */}
-                <div className="p-4 rounded-full shrink-0 relative w-18 h-18">
-                  <Image
-                    src={exp.icon}
-                    alt={exp.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-
-                {/* Text */}
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-slate-900">
-                    {exp.title}
-                  </h3>
-
-                  <div className="flex flex-wrap items-center gap-2 text-sm mb-4">
-                    <span className="text-slate-500">{exp.period}</span>
-                    <span className="text-[#FF5722] font-bold">
-                      • {exp.company}
-                    </span>
+        <motion.div
+          initial={{ x: 50, opacity: 0, scale: 0.95 }}
+          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+          }}
+        >
+          <ScrollArea className="h-96 md:h-116">
+            <div className="space-y-6 sm:px-6">
+              {experiences.map((exp, index) => (
+                <div
+                  key={index}
+                  className="bg-white px-8 pt-10 pb-12 md:pt-8 md:pb-8 mt-3 mb-8 rounded-xl flex flex-col sm:flex-row gap-6  items-start  border border-white hover:border-[#f8774f] hover:shadow-[0_0_20px_#f8774f] transition duration-300"
+                >
+                  {/* Icon image */}
+                  <div className="p-4 rounded-full shrink-0 relative w-18 h-18">
+                    <Image
+                      src={exp.icon}
+                      alt={exp.title}
+                      fill
+                      className="object-contain"
+                    />
                   </div>
 
-                  {/* Description */}
-                  {Array.isArray(exp.description) ? (
-                    <ul className="text-slate-400 text-sm space-y-1">
-                      {exp.description.map((item, i) => (
-                        <li key={i} className="flex gap-2">
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      {exp.description}
-                    </p>
-                  )}
+                  {/* Text */}
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-bold text-slate-900">
+                      {exp.title}
+                    </h3>
+
+                    <div className="flex flex-wrap items-center gap-2 text-sm mb-4">
+                      <span className="text-slate-500">{exp.period}</span>
+                      <span className="text-[#FF5722] font-bold">
+                        • {exp.company}
+                      </span>
+                    </div>
+
+                    {/* Description */}
+                    {Array.isArray(exp.description) ? (
+                      <ul className="text-slate-400 text-sm space-y-1">
+                        {exp.description.map((item, i) => (
+                          <li key={i} className="flex gap-2">
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-slate-400 text-sm leading-relaxed">
+                        {exp.description}
+                      </p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </ScrollArea>
+              ))}
+            </div>
+          </ScrollArea>
+        </motion.div>
       </div>
     </section>
   );

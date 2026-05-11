@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 
 import React from "react";
 import { MapPin, Mail, Phone, ArrowUpRight } from "lucide-react";
@@ -34,7 +35,17 @@ export const ContactSection = () => {
       {/* Main Content Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-18 sm:gap-20 md:gap-12 items-start mt-32">
         {/* LEFT SIDE */}
-        <div className="lg:col-span-4 space-y-6">
+        <motion.div 
+         initial={{ x: -50, opacity: 0, scale: 0.95 }}
+          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+          }}
+        className="lg:col-span-4 space-y-6">
           <div className="flex items-center gap-5">
             <div className="bg-orange-100 p-7 rounded-sm">
               <MapPin className="text-orange-600 w-6 h-6" />
@@ -64,10 +75,21 @@ export const ContactSection = () => {
               <p className="text-gray-500">+225 05 96 08 56 43</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* RIGHT SIDE - FORM */}
-        <div className="lg:col-span-8 px-0 md:pl-16 pb-8">
+        <motion.div
+          initial={{ y: 50, opacity: 0, scale: 0.95 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+          }}
+          className="lg:col-span-8 px-0 md:pl-16 pb-8"
+        >
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
@@ -142,7 +164,7 @@ export const ContactSection = () => {
               <p className="text-center text-sm mt-3">{responseMessage}</p>
             )}
           </form>
-        </div>
+        </motion.div>
       </div>
 
       {/* Decorative Image */}

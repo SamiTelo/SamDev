@@ -1,5 +1,8 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Title } from "./title";
+import { containerVariants, itemVariants } from "@/src/animations/fade.animation";
 
 const skills = [
   {
@@ -29,9 +32,12 @@ const skills = [
 ];
 
 export const CompetenceSection = () => {
-  return (
-    <section id="competence" className="pt-0 md:sm:pt-20 sm:pt-20 pb-16 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white">
 
+  return (
+    <section
+      id="competence"
+      className="pt-0 md:sm:pt-20 sm:pt-20 pb-16 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white"
+    >
       {/* Title */}
       <Title
         title="Expertise"
@@ -43,12 +49,21 @@ export const CompetenceSection = () => {
       {/*----------------------------------------------
                Main Content Grid 
         ----------------------------------------------------*/}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 pt-10">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }}
+        className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 pt-10"
+      >
         {/* ----------------------------------------
                BLOC CARD
              ----------------------------------------------- */}
         {skills.map((skill, index) => (
-          <div
+          <motion.div
+            variants={itemVariants}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10 }}
             key={index}
             className="flex flex-col items-center text-center group"
           >
@@ -83,9 +98,9 @@ export const CompetenceSection = () => {
             <p className="text-slate-500 leading-relaxed sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm ">
               {skill.description}
             </p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

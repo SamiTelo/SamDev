@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import { Quote, Star } from "lucide-react";
@@ -161,7 +161,17 @@ export const TestimonialsSection = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="flex flex-col items-center lg:items-end pr-0 md:pr-12">
+        <motion.div
+         initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{
+            duration: 0.8,
+            type: "spring",
+            stiffness: 80,
+            damping: 12,
+          }} 
+        className="flex flex-col items-center lg:items-end pr-0 md:pr-12">
           <div className="grid grid-cols-3 gap-6 mb-12">
             {clients.map((client) => (
               <div key={client.id} className="text-center">
@@ -185,7 +195,7 @@ export const TestimonialsSection = () => {
             <div className="h-3.5 flex-2 bg-[#FF5722]" />
             <div className="h-0.5 flex-1 bg-black" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

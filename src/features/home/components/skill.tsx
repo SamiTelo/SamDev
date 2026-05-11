@@ -1,3 +1,4 @@
+"use client";
 import { Cpu, Waypoints, BarChart } from "lucide-react";
 import Image from "next/image";
 import { Title } from "./title";
@@ -39,7 +40,6 @@ const skills = [
 export const SkillSection = () => {
   return (
     <section className="relative overflow-hidden py-0 sm:py-18 md:py-30">
-      
       {/* IMAGE BG TOP RIGHT */}
       <div className="absolute -top-20 md:top-0 -right-38 md:-right-14 -z-10 pointer-events-none">
         <Image
@@ -62,7 +62,9 @@ export const SkillSection = () => {
         />
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-30 sm:mt-38 md:mt-38">
+        <div
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-30 sm:mt-38 md:mt-38"
+        >
           {skills.map((skill, index) => (
             <div
               key={index}

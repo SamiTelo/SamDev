@@ -1,5 +1,8 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Title } from "./title";
+import { containerVariants, itemVariants } from "@/src/animations/fade.animation";
 
 const features = [
   {
@@ -44,12 +47,20 @@ export const AtoutSection = () => {
         {/*----------------------------------------------
                Main Content Grid 
         ----------------------------------------------------*/}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12 mt-24 md:mt-32 px-0 sm:px-12">
+        <motion.div 
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12 mt-24 md:mt-32 px-0 sm:px-12">
           {/* ----------------------------------------
                BLOC cards
              ----------------------------------------------- */}
           {features.map((item, index) => (
-            <div
+            <motion.div
+             variants={itemVariants}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 200, damping: 10 }}
               key={index}
               className="bg-white px-12 pb-11 md:pb-14 pt-12 rounded-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:scale-[1.02]"
             >
@@ -65,9 +76,9 @@ export const AtoutSection = () => {
               <p className="text-gray-500  text-sm sm:text-[16px] md:text-[16px] leading-relaxed">
                 {item.description}
               </p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Bouton Contact */}
         <a
