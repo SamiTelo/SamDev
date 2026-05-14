@@ -76,7 +76,7 @@ export const TestimonialsSection = () => {
       <div className="absolute -top-22 md:top-0 -left-56 md:-left-30 -z-10 pointer-events-none">
         <Image
           src="/assets/bg-testi.svg"
-          alt=""
+          alt="testimonial-bg"
           width={600}
           height={600}
           className="w-75 md:w-112.5 md:h-80 h-50 animate-pulse"

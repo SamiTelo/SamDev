@@ -104,7 +104,7 @@ export const ProjectSection = () => {
       <div className="absolute top-10 md:top-30 -left-50 md:-left-30 -z-10 pointer-events-none">
         <Image
           src="/assets/project-bg.svg"
-          alt=""
+          alt="project-bg"
           width={600}
           height={600}
           className="w-75 md:w-112.5 md:h-50 h-30 animate-pulse"

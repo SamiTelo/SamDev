@@ -14,7 +14,7 @@ export const AboutSection = () => {
       <div className="absolute top-0 right-0 -z-10 pointer-events-none">
         <Image
           src="/assets/About-bg-2.png"
-          alt=""
+          alt="about-bg-2"
           width={600}
           height={600}
           className="w-75 md:w-112.5 lg:w-137.5  md:h-100 h-auto"
@@ -25,7 +25,7 @@ export const AboutSection = () => {
       <div className="absolute -bottom-10 md:-bottom-46 left-0 -z-10 pointer-events-none">
         <Image
           src="/assets/about-bg-1.svg"
-          alt=""
+          alt="about-bg-1"
           width={600}
           height={600}
           className="w-45 sm:w-50 md:w-50 lg:w-50 md:h-125 h-auto animate-pulse"
