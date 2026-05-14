@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Linkedin, Instagram, ArrowUpRight } from "lucide-react";
+import FuzzyText from "@/components/FuzzyText";
 
 export const HeroSection = () => {
   return (
@@ -54,8 +55,15 @@ export const HeroSection = () => {
 
           {/* Text */}
           <h1 className="font-bold text-4xl md:text-6xl leading-tight text-center md:text-left">
-            Je suis <span className="text-[#F75023]">Samuel</span> Développeur
-            fullstack
+            <span>Je suis </span>
+
+            <span className="inline-flex md:-ml-10">
+              <FuzzyText baseIntensity={0.2} hoverIntensity={0.1} enableHover>
+                Samuel
+              </FuzzyText>
+            </span>
+
+            <span> Développeur fullstack</span>
           </h1>
 
           <p className="mt-6 sm:text-[16px] md:text-[16px] text-sm text-gray-700 text-center md:text-left leading-relaxed">

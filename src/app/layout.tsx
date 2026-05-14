@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
+import CursorProvider from "@/components/cursor/CursorProvider";
+
 
 export const metadata: Metadata = {
   title: "Samuel Tiemtore – Développeur Fullstack Web & Mobile",
@@ -28,10 +30,11 @@ export default function RootLayout({
         <meta name="msvalidate.01" content="E461949A48CF2394C4724BA68ECA0499" />
       </head>
 
-      <body
+      <body 
         className="font-sans antialiased min-h-screen"
         suppressHydrationWarning
       >
+         <CursorProvider/>
         {children}
         <SeoJsonLd />
       </body>

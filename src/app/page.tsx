@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Samuel Tiemtore",
   },
   description:
-    "Développeur Fullstack spécialisé en Next.js, Flutter et NestJS. Création d’applications web et mobiles modernes, UI/UX et API performantes.",
+    "Développeur Fullstack spécialisé en Next.js, Flutter et NestJS. Création d’applications web et mobiles modernes avec UI/UX et API performantes.",
   keywords: [
     "Samuel Tiemtore",
     "développeur fullstack",
