@@ -56,7 +56,7 @@ export const FaqSection = () => {
       <div className="absolute -top-20 md:top-0 -right-38 md:-right-24 -z-10 pointer-events-none">
         <Image
           src="/assets/bg-testi.svg"
-          alt=""
+          alt="faq-bg"
           width={600}
           height={600}
           className="`w-75 md:w-112.5  md:h-80 h-50 animate-pulse"

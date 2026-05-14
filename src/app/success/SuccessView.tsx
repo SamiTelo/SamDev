@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Mail } from "lucide-react";
 import Link from "next/link";
 
-export default function SuccessSection() {
+export default function SuccessView() {
   return (
     <section className="relative min-h-screen bg-[#f7f7f8] overflow-hidden flex flex-col">
       {/*-------------------------------------------------------------------

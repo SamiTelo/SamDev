@@ -171,7 +171,7 @@ export const ContactSection = () => {
       <div className="absolute -8 bottom-0 md:-bottom-30 right-0 pointer-events-none">
         <Image
           src="/assets/contact-bg.svg"
-          alt=""
+          alt="contact"
           width={600}
           height={600}
           className="w-45 sm:w-50 md:w-50 md:h-125 h-50 animate-pulse"

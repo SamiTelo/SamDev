@@ -44,7 +44,7 @@ export const SkillSection = () => {
       <div className="absolute -top-20 md:top-0 -right-38 md:-right-14 -z-10 pointer-events-none">
         <Image
           src="/assets/project-bg.svg"
-          alt=""
+          alt="skill-bg"
           width={600}
           height={600}
           className="`w-75 md:w-112.5  md:h-50 h-46 animate-pulse"
