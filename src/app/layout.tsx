@@ -23,6 +23,9 @@ export default function RootLayout({
       <head>
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="Ayp9qruQoBRawcPXXuji553u5itMff2mWlJiF1x3hHE" />
+         
+         {/* Bing Webmaster verification */}
+        <meta name="msvalidate.01" content="E461949A48CF2394C4724BA68ECA0499" />
       </head>
 
       <body

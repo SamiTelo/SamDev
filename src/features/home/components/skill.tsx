@@ -63,7 +63,7 @@ export const SkillSection = () => {
 
         {/* Main Content Grid */}
         <div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-30 sm:mt-38 md:mt-38"
+          className="max-w-7xl mx-auto px-2 md:px-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-30 sm:mt-38 md:mt-38"
         >
           {skills.map((skill, index) => (
             <div
