@@ -1,5 +1,5 @@
-import SuccessSection from "./components/succes";
+import SuccessView from "./SuccessView";
 
 export default function Home() {
-  return <SuccessSection />;
+  return <SuccessView/>;
 }
