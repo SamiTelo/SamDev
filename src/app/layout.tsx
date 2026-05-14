@@ -5,7 +5,7 @@ import { SeoJsonLd } from "@/components/SeoJsonLd";
 export const metadata: Metadata = {
   title: "Samuel Tiemtore – Développeur Fullstack Web & Mobile",
   description:
-    "Développeur fullstack spécialisé en Next.js, Flutter et NestJS. Création d'applications web et mobiles modernes, UI/UX, API et DevOps.",
+  "Développeur Fullstack spécialisé en Next.js, Flutter et NestJS. Création d’applications web et mobiles modernes, UI/UX et API performantes.",
 };
 
 export const viewport: Viewport = {
