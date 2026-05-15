@@ -1,5 +1,8 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Title } from "./title";
+import { containerVariants, itemVariants } from "@/animations/fade.animation";
 
 const skills = [
   {
@@ -30,8 +33,10 @@ const skills = [
 
 export const CompetenceSection = () => {
   return (
-    <section id="competence" className="pt-0 md:sm:pt-20 sm:pt-20 pb-16 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white">
-
+    <section
+      id="competence"
+      className="pt-0 md:sm:pt-20 sm:pt-20 pb-16 sm:pb-30 md:pb-48 px-6 sm:px-10 bg-white"
+    >
       {/* Title */}
       <Title
         title="Expertise"
@@ -43,48 +48,61 @@ export const CompetenceSection = () => {
       {/*----------------------------------------------
                Main Content Grid 
         ----------------------------------------------------*/}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 pt-10">
-        {/* ----------------------------------------
+
+      {/* wrapper motion */}
+      <div className="overflow-hidden">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 pt-10"
+        >
+          {/* ----------------------------------------
                BLOC CARD
              ----------------------------------------------- */}
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center text-center group"
-          >
-            {/* Conteneur l'icône + (Blob) */}
-            <div className="relative w-48 h-48 mb-2 sm:mb-8 md:mb-8 flex items-center justify-center">
-              {/* Le fond (Blob effect) */}
-              <div
-                className={`absolute inset-0 ${skill.color} rounded-full opacity-60 blur-2xl group-hover:scale-110 transition-transform duration-500`}
-              />
+          {skills.map((skill, index) => (
+            <motion.div
+              variants={itemVariants}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 200, damping: 10 }}
+              key={index}
+              className="flex flex-col items-center text-center group"
+            >
+              {/* Conteneur l'icône + (Blob) */}
+              <div className="relative w-48 h-48 mb-2 sm:mb-8 md:mb-8 flex items-center justify-center">
+                {/* Le fond (Blob effect) */}
+                <div
+                  className={`absolute inset-0 ${skill.color} rounded-full opacity-60 blur-2xl group-hover:scale-110 transition-transform duration-500`}
+                />
 
-              <div className="relative z-10 w-36 h-36 sm:w-42 sm:h-42  md:w-42 md:h-42">
-                <Image
-                  src={skill.icon}
-                  alt={skill.title}
-                  fill
-                  className="object-contain"
+                <div className="relative z-10 w-36 h-36 sm:w-42 sm:h-42  md:w-42 md:h-42">
+                  <Image
+                    src={skill.icon}
+                    alt={skill.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+
+                {/* Petits points décoratifs autour de l'image */}
+                <div
+                  className={`absolute top-4 left-4 w-3 h-3 rounded-full ${skill.dotColor} opacity-40 animate-bounce duration-3000`}
+                />
+                <div
+                  className={`absolute bottom-8 right-6 w-2 h-2 rounded-full ${skill.dotColor} opacity-60 animate-bounce duration-3000`}
                 />
               </div>
 
-              {/* Petits points décoratifs autour de l'image */}
-              <div
-                className={`absolute top-4 left-4 w-3 h-3 rounded-full ${skill.dotColor} opacity-40 animate-bounce duration-3000`}
-              />
-              <div
-                className={`absolute bottom-8 right-6 w-2 h-2 rounded-full ${skill.dotColor} opacity-60 animate-bounce duration-3000`}
-              />
-            </div>
-
-            <h3 className="text-xl font-bold text-slate-800 mb-4">
-              {skill.title}
-            </h3>
-            <p className="text-slate-500 leading-relaxed sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm ">
-              {skill.description}
-            </p>
-          </div>
-        ))}
+              <h3 className="text-xl font-bold text-slate-800 mb-4">
+                {skill.title}
+              </h3>
+              <p className="text-slate-500 leading-relaxed sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm ">
+                {skill.description}
+              </p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

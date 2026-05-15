@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -50,11 +52,12 @@ const faqData = [
 export const FaqSection = () => {
   return (
     <section className="relative overflow-hidden py-20 sm:py-40 md:pt-40 px-6 sm:px-10">
+      
       {/* IMAGE BG TOP RIGHT */}
       <div className="absolute -top-20 md:top-0 -right-38 md:-right-24 -z-10 pointer-events-none">
         <Image
           src="/assets/bg-testi.svg"
-          alt=""
+          alt="faq-bg"
           width={600}
           height={600}
           className="`w-75 md:w-112.5  md:h-80 h-50 animate-pulse"
@@ -71,25 +74,40 @@ export const FaqSection = () => {
       {/*----------------------------------------------
                 Main Content Grid 
         ----------------------------------------------------*/}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 pt-10 sm:pt-20 md:pt-20">
-        {/* Colonne Gauche */}
-        <Accordion
-          type="single"
-          collapsible
-          defaultValue="item-1"
-          className="w-full space-y-4"
-        >
-          {faqData.slice(0, 3).map((item) => (
-            <FaqItem key={item.id} item={item} />
-          ))}
-        </Accordion>
 
-        {/* Colonne Droite */}
-        <Accordion type="single" collapsible className="w-full space-y-4">
-          {faqData.slice(3, 6).map((item) => (
-            <FaqItem key={item.id} item={item} />
-          ))}
-        </Accordion>
+      {/* wrapper motion */}
+      <div className="overflow-hidden">
+        <motion.div
+          initial={{ y: 50, opacity: 0, scale: 0.95 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+          }}
+          className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 pt-10 sm:pt-20 md:pt-20"
+        >
+          {/* Colonne Gauche */}
+          <Accordion
+            type="single"
+            collapsible
+            defaultValue="item-1"
+            className="w-full space-y-4"
+          >
+            {faqData.slice(0, 3).map((item) => (
+              <FaqItem key={item.id} item={item} />
+            ))}
+          </Accordion>
+
+          {/* Colonne Droite */}
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {faqData.slice(3, 6).map((item) => (
+              <FaqItem key={item.id} item={item} />
+            ))}
+          </Accordion>
+        </motion.div>
       </div>
     </section>
   );
