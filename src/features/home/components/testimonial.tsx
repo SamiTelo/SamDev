@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import { Quote, Star } from "lucide-react";
@@ -13,8 +13,6 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "@/components/ui/card";
-
-
 
 const testimonials = [
   {
@@ -71,12 +69,11 @@ export const TestimonialsSection = () => {
 
   return (
     <section className="relative overflow-hidden pt-20 pb-24 px-6 sm:px-10 ">
-
       {/* IMAGE BG TOP LEFT */}
       <div className="absolute -top-22 md:top-0 -left-56 md:-left-30 -z-10 pointer-events-none">
         <Image
           src="/assets/bg-testi.svg"
-          alt=""
+          alt="testimonial-bg"
           width={600}
           height={600}
           className="w-75 md:w-112.5 md:h-80 h-50 animate-pulse"
@@ -92,8 +89,8 @@ export const TestimonialsSection = () => {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 sm:gap-24 md:gap-10 items-center pl-0 md:pl-12 py-10 sm:py-18 md:py-18">
-
-        {/* LEFT - CAROUSEL */}
+        
+        {/*---------------------------------LEFT - CAROUSEL-----------------------------------------*/}
         <div className="relative">
           <Carousel
             plugins={[plugin.current]}
@@ -107,8 +104,7 @@ export const TestimonialsSection = () => {
                   <Card className="border-none bg-[#F6F9FC] rounded-2xl p-7 md:p-10">
                     <CardContent className="p-0 space-y-6">
                       <div className="flex items-center gap-6">
-
-                         {/* image */}
+                        {/* image */}
                         <div className="relative w-30 h-30 md:w-30 md:h-30 rounded-full overflow-hidden bg-white">
                           <Image
                             src={item.image}
@@ -134,18 +130,17 @@ export const TestimonialsSection = () => {
                             ))}
                           </div>
                         </div>
-                         
-                         {/* icon */}
+
+                        {/* icon */}
                         <div className="ml-auto opacity-10">
                           <Quote size={80} strokeWidth={1} />
                         </div>
                       </div>
-                         
-                        {/* text */}
+
+                      {/* text */}
                       <p className="text-gray-600 leading-relaxed max-w-lg text-sm md:text-base">
                         {item.text}
                       </p>
-
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -160,31 +155,46 @@ export const TestimonialsSection = () => {
           </Carousel>
         </div>
 
-        {/* RIGHT */}
-        <div className="flex flex-col items-center lg:items-end pr-0 md:pr-12">
-          <div className="grid grid-cols-3 gap-6 mb-12">
-            {clients.map((client) => (
-              <div key={client.id} className="text-center">
-                <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-xl grayscale">
-                  <Image
-                    src={client.image}
-                    alt={client.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h4 className="font-bold text-sm">{client.name}</h4>
-                <p className="text-[10px] text-gray-400">{client.role}</p>
-              </div>
-            ))}
-          </div>
+        {/*--------------------------------RIGHT--------------------------------------*/}
 
-          {/* Bar Design */}
-          <div className="flex items-center gap-1 w-full max-w-50 mr-0 md:mr-20">
-            <div className="h-0.5 flex-1 bg-black" />
-            <div className="h-3.5 flex-2 bg-[#FF5722]" />
-            <div className="h-0.5 flex-1 bg-black" />
-          </div>
+        {/* wrapper motion */}
+        <div className="overflow-hidden">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{
+              duration: 0.8,
+              type: "spring",
+              stiffness: 80,
+              damping: 12,
+            }}
+            className="flex flex-col items-center lg:items-end pr-0 md:pr-12"
+          >
+            <div className="grid grid-cols-3 gap-6 mb-12">
+              {clients.map((client) => (
+                <div key={client.id} className="text-center">
+                  <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-xl grayscale">
+                    <Image
+                      src={client.image}
+                      alt={client.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h4 className="font-bold text-sm">{client.name}</h4>
+                  <p className="text-[10px] text-gray-400">{client.role}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Bar Design */}
+            <div className="flex items-center gap-1 w-full max-w-50 mr-0 md:mr-20">
+              <div className="h-0.5 flex-1 bg-black" />
+              <div className="h-3.5 flex-2 bg-[#FF5722]" />
+              <div className="h-0.5 flex-1 bg-black" />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

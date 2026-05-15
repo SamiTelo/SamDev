@@ -103,7 +103,7 @@ export const ProjectSection = () => {
       />
 
       {/* IMAGE BG TOP LEFT */}
-      <div className="absolute top-10 md:top-30 -left-50 md:-left-30 -z-10 pointer-events-none">
+      <div className="absolute top-10 md:top-30 -left-20 md:-left-30 -z-10 pointer-events-none">
         <Image
           src="/assets/project-bg.svg"
           alt=""
