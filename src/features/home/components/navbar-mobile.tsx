@@ -43,7 +43,7 @@ export function SheetSide() {
                 </div>
               </SheetTitle>
               <SheetDescription>
-                Développeur fullstack | UI/UX . Web . Mobile . DevOps
+                Développeur fullstack | UI/UX . Web . Mobile
               </SheetDescription>
             </SheetHeader>
              

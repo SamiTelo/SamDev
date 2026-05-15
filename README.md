@@ -16,7 +16,7 @@ Ce portfolio me permet de :
 
 ## Stack Technique
 
-- Next.js 16 (App Router)
+- Next.js 16
 - React
 - TypeScript
 - Tailwind CSS
