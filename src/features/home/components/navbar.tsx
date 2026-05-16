@@ -47,7 +47,7 @@ export const NavBar = () => {
 
       {/* Desktop Button */}
       <a
-        href="/assets/cv/CV-SAMUEL-TIEMTORE.pdf"
+        href="/assets/cv/cv-samuel-tiemtore.pdf"
         download
         target="_blank"
         rel="noopener noreferrer"
