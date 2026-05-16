@@ -81,7 +81,7 @@ export const ExperienceSection = () => {
             ma capacité à mener des projets à succès.
           </p>
           <a
-            href="/assets/cv/cv-samuel-tiemtore.pdf"
+            href="/assets/cv/cv-tiemtore-samuel.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
