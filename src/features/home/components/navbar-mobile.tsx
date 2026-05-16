@@ -91,7 +91,7 @@ export function SheetSide() {
             {/* Footer*/}
             <SheetFooter>
               <a
-                href="/assets/cv/CV-SAMUEL-TIEMTORE.pdf"
+                href="/assets/cv/cv-samuel-tiemtore.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"

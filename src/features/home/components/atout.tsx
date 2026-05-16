@@ -52,7 +52,7 @@ export const AtoutSection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12 mt-24 md:mt-32 px-0 sm:px-12"
+            className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12 mt-10 md:mt-32 px-0 sm:px-12"
           >
             {features.map((item, index) => (
               <motion.div
