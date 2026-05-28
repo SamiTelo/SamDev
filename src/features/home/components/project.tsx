@@ -89,6 +89,25 @@ const projects = [
     demoUrl: "https://api-football-gfpz.onrender.com/docs",
     githubUrl: "https://github.com/SamiTelo/API-Football",
   },
+   {
+    id: 5,
+    title: "SyneXa — Solution & Technologies IT (Next.js)",
+    description:
+      "Ce site a été conçu pour présenter une agence IT moderne, mettre en avant ses domaines d’expertise et permettre aux entreprises de découvrir facilement ses services et de prendre contact rapidement.",
+    image: "/assets/projects/synexa.png",
+    skills: [
+      "/assets/skills/nextjs.svg",
+      "/assets/skills/figma.svg",
+      "/assets/skills/react-icon.svg",
+      "/assets/skills/tailwindcss-icon.svg",
+      "/assets/skills/motion-icon.svg",
+      "/assets/skills/typescript-icon.svg",
+      "/assets/skills/github-icon.svg",
+      "/assets/skills/git-icon.svg",
+    ],
+    demoUrl: "https://synexa-ashy.vercel.app",
+    githubUrl: "https://github.com/SamiTelo/SyneXe",
+  },
 ];
 
 export const ProjectSection = () => {
