@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { SeoJsonLd } from "@/components/SeoJsonLd";
+import { SeoJsonLd } from "@/components/seo/SeoJsonLd";
 import CursorProvider from "@/components/cursor/CursorProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Clarity from "@/components/analytics/Clarity";
 
 export const metadata: Metadata = {
   title: "Samuel Tiemtore – Développeur Fullstack Web & Mobile",
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
         <GoogleAnalytics gaId="G-DMT9YD9GER" />
+        <Clarity />
       </body>
     </html>
   );
