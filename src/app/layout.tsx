@@ -3,6 +3,7 @@ import "./globals.css";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import CursorProvider from "@/components/cursor/CursorProvider";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Samuel Tiemtore – Développeur Fullstack Web & Mobile",
@@ -37,7 +38,8 @@ export default function RootLayout({
         <CursorProvider/>
         {children}
         <SeoJsonLd />
-         <Analytics />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
