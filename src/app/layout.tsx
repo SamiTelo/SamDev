@@ -4,6 +4,7 @@ import { SeoJsonLd } from "@/components/SeoJsonLd";
 import CursorProvider from "@/components/cursor/CursorProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Samuel Tiemtore – Développeur Fullstack Web & Mobile",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     "Développeur fullstack spécialisé en Next.js, Flutter et NestJS. Création d'applications web et mobiles modernes, UI/UX, API et DevOps.",
 };
 
+// Configuration responsive globale du site
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -40,6 +42,7 @@ export default function RootLayout({
         <SeoJsonLd />
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics gaId="G-DMT9YD9GER" />
       </body>
     </html>
   );
