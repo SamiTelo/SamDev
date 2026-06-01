@@ -8,7 +8,7 @@
 <details open>
 <summary>
   <img src="./assets/flags/us.png" alt="English" width="25" style="vertical-align: middle; margin-right: 8px;" />
-  <b>English(Click to collapse)</b>
+  <b>English</b>
 </summary>
 
 <br />
