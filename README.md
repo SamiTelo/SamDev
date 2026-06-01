@@ -8,7 +8,7 @@
 <details open>
 <summary>
   <img src="./assets/flags/us.png" alt="English" width="25" style="vertical-align: middle; margin-right: 8px;" />
-  <b>English Version (Click to collapse)</b>
+  <b>English(Click to collapse)</b>
 </summary>
 
 <br />
@@ -43,7 +43,6 @@ This portfolio allows me to:
 </details>
 
 <br />
----
 
 <!-- ========================================================================= -->
 <!-- FRENCH VERSION (Default Closed) -->
@@ -51,7 +50,7 @@ This portfolio allows me to:
 <details>
 <summary>
   <img src="./assets/flags/fr.png" alt="Français" width="25" style="vertical-align: middle; margin-right: 8px;" />
-  <b>Française (Cliquez pour dérouler)</b>
+  <b>Français</b>
 </summary>
 
 <br />
