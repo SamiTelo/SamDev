@@ -1,4 +1,4 @@
-## Samuel Tiemtore – Portfolio Fullstack Developer
+### Samuel Tiemtore – Portfolio Fullstack Developer
 
 ---
 
@@ -7,8 +7,8 @@
 <!-- ========================================================================= -->
 <details open>
 <summary>
-  <img src="https://flagcdn.com/w30/us.png" alt="English" width="25" style="vertical-align: middle; margin-right: 8px;" />
-  <b>View English Version (Click to collapse)</b>
+  <img src="./assets/flags/us.png" alt="English" width="25" style="vertical-align: middle; margin-right: 8px;" />
+  <b>English Version (Click to collapse)</b>
 </summary>
 
 <br />
@@ -16,7 +16,7 @@
 Welcome to my personal portfolio repository. 
 This project showcases my skills, professional projects, and my universe as a Fullstack Developer.
 
-### Project Goals
+## Project Goals
 
 This portfolio allows me to:
 - Showcase my technical skills and stack
@@ -24,14 +24,14 @@ This portfolio allows me to:
 - Demonstrate my expertise in modern UI/UX design
 - Serve as my primary professional storefront for global clients
 
-### Tech Stack
+## Tech Stack
 
 - **Framework:** Next.js (React)
 - **Language:** TypeScript
 - **Styling & UI:** Tailwind CSS, Shadcn UI
 - **Animations:** Framer Motion
 
-### Features
+## Features
 
 - Modern, clean, and fully responsive design
 - Smooth navigation with a dedicated mobile menu
@@ -43,14 +43,15 @@ This portfolio allows me to:
 </details>
 
 <br />
+---
 
 <!-- ========================================================================= -->
 <!-- FRENCH VERSION (Default Closed) -->
 <!-- ========================================================================= -->
 <details>
 <summary>
-  <img src="https://flagcdn.com/w30/fr.png" alt="Français" width="25" style="vertical-align: middle; margin-right: 8px;" />
-  <b>Afficher la Version Française (Cliquez pour dérouler)</b>
+  <img src="./assets/flags/fr.png" alt="Français" width="25" style="vertical-align: middle; margin-right: 8px;" />
+  <b>Française (Cliquez pour dérouler)</b>
 </summary>
 
 <br />
@@ -58,7 +59,7 @@ This portfolio allows me to:
 Bienvenue sur le dépôt de mon portfolio personnel.
 Ce projet présente mes compétences, mes projets et mon univers en tant que développeur Fullstack.
 
-### Objectif du projet
+## Objectif du projet
 
 Ce portfolio me permet de :
 - Présenter mes compétences techniques
@@ -66,14 +67,14 @@ Ce portfolio me permet de :
 - Démontrer mon niveau en UI/UX moderne
 - Servir de vitrine professionnelle pour mes clients
 
-### Stack Technique
+## Technologies
 
 - **Framework :** Next.js (React)
 - **Langage :** TypeScript
 - **Design & UI :** Tailwind CSS, Shadcn UI
 - **Animations :** Framer Motion
 
-### Fonctionnalités
+## Fonctionnalités
 
 - Design moderne et responsive
 - Navigation fluide avec menu mobile
@@ -90,17 +91,17 @@ Ce portfolio me permet de :
 
 | Hero | About |
 |-------|---------|
-| ![hero](./assets/screenshots/hero.png) | ![banner](./assets/screenshots/about.png) |
-| Expertises | Atouts |
-| ![about](./assets/screenshots/competence.png) | ![service](./assets/screenshots/atout.png) |
-| Expérience | Skills |
-| ![pricing](./assets/screenshots/experience.png) | ![faq](./assets/screenshots/faq.png) |
+| ![hero](./assets/screenshots/hero.png) | ![About](./assets/screenshots/about.png) |
+| Expertise | Atouts |
+| ![Competence](./assets/screenshots/competence.png) | ![atout](./assets/screenshots/atout.png) |
+| Experience | Skills |
+| ![experience](./assets/screenshots/experience.png) | ![skill](./assets/screenshots/skill.png) |
 | Project | Faq |
-| ![testimonial](./assets/screenshots/projet.png) | ![cta](./assets/screenshots/faq.png) |
+| ![project](./assets/screenshots/projet.png) | ![faq](./assets/screenshots/faq.png) |
 | Testimonial | Counter |
-| ![blog](./assets/screenshots/testimonial.png) | ![footer](./assets/screenshots/counter.png) |
+| ![testimonial](./assets/screenshots/testimonial.png) | ![counter](./assets/screenshots/counter.png) |
 | contact |
-| ![blog](./assets/screenshots/contact.png) | 
+| ![contact](./assets/screenshots/contact.png) | |
 
 ---
 
@@ -126,7 +127,7 @@ src/
 README.md            # Project documentation
 ```
 
-## Setup & Installation
+## Installation
 
 ```bash
 
