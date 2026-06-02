@@ -29,11 +29,11 @@ export const CtaSection = () => {
           >
             <div className="space-y-4">
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                Mon Compteur
+                Restons connectés
               </h2>
               <p className="max-w-2xl mx-auto text-white sm:text-[16px] md:text-[16px] text-sm leading-relaxed ">
-                Ces chiffres reflètent mon savoir-faire, mon expérience et ma
-                passion pour le développement web et mobile. Mon newsletter
+               Au-delà des chiffres, j&apos;aime partager ma passion pour le développement web et mobile. Rejoins ma newsletter 
+               pour suivre mes projets, mes retours d&apos;expérience et ma veille technologies.
               </p>
             </div>
 

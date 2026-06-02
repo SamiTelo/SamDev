@@ -9,7 +9,7 @@ import Marquee from "react-fast-marquee";
 const projects = [
   {
     id: 1,
-    title: "Site vitrine Webshift",
+    title: "Webshift — Agence marketing digital (Next.js)",
     description:
       "WebShift, un site web moderne et responsive dédié au marketing digital, à l’acquisition et aux services de branding en ligne.",
     image: "/assets/projects/web-shift.png",
@@ -50,6 +50,25 @@ const projects = [
   },
   {
     id: 3,
+    title: "Mon portfolio",
+    description:
+      "Ce portfolio présente mes compétences, mes projets et mon univers en tant que développeur Fullstack.",
+    image: "/assets/projects/portfolio.png",
+    skills: [
+      "/assets/skills/nextjs.svg",
+      "/assets/skills/figma.svg",
+      "/assets/skills/react-icon.svg",
+      "/assets/skills/tailwindcss-icon.svg",
+      "/assets/skills/motion-icon.svg",
+      "/assets/skills/typescript-icon.svg",
+      "/assets/skills/github-icon.svg",
+      "/assets/skills/git-icon.svg",
+    ],
+    demoUrl: "https://api-football-gfpz.onrender.com/docs",
+    githubUrl: "https://github.com/SamiTelo/API-Football",
+  },
+  {
+    id: 4,
     title: "API backend | NestJS . Prisma . Auth . CRUD Club de football",
     description:
       "API backend complète avec NestJS, Prisma et PostgreSQL, sécurisée par JWT (Refresh Tokens, rôles & permissions, Cookies HttpOnly), incluant des modules métier (Players, Teams, Positions) ainsi que le monitoring (Prometheus, Grafana) et le tracking d’erreurs (Sentry).",
@@ -70,25 +89,7 @@ const projects = [
     demoUrl: "https://api-football-gfpz.onrender.com/docs",
     githubUrl: "https://github.com/SamiTelo/API-Football",
   },
-  {
-    id: 4,
-    title: "Mon portfolio",
-    description:
-      "Ce portfolio présente mes compétences, mes projets et mon univers en tant que développeur Fullstack.",
-    image: "/assets/projects/portfolio.png",
-    skills: [
-      "/assets/skills/nextjs.svg",
-      "/assets/skills/figma.svg",
-      "/assets/skills/react-icon.svg",
-      "/assets/skills/tailwindcss-icon.svg",
-      "/assets/skills/motion-icon.svg",
-      "/assets/skills/typescript-icon.svg",
-      "/assets/skills/github-icon.svg",
-      "/assets/skills/git-icon.svg",
-    ],
-    demoUrl: "https://api-football-gfpz.onrender.com/docs",
-    githubUrl: "https://github.com/SamiTelo/API-Football",
-  },
+  
    {
     id: 5,
     title: "SyneXa — Solution & Technologies IT (Next.js)",
