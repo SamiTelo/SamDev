@@ -8,8 +8,11 @@ const experiences = [
     title: "Développeur fullstack",
     period: "Avr 2025 - présent",
     company: "Freelance",
-    description:
-      "création d’applications web responsive et mobiles modernes, performantes et adaptées aux besoins réels.",
+    description: [
+      "Développement d'applications web avec Next.js et NestJS",
+      "Création d'API REST sécurisées avec JWT et PostgreSQL",
+      "Optimisation SEO et performances Lighthouse",
+    ],
     icon: "/assets/mobile-icon.svg",
   },
   {
