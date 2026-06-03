@@ -3,28 +3,23 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Title } from "./title";
 import { containerVariants, itemVariants } from "@/animations/fade.animation";
+import { useTranslations } from "next-intl";
 
-const skills = [
+const competence = [
   {
-    title: "Développement web",
-    description:
-      "Création de sites web responsifs et performants avec les dernières technologies.",
+    key: "web",
     icon: "/assets/web.svg",
     color: "bg-emerald-50",
     dotColor: "bg-emerald-400",
   },
   {
-    title: "Développement mobile",
-    description:
-      "Applications mobiles intuitives et adaptées à vos besoins spécifiques.",
+    key: "mobile",
     icon: "/assets/mobile.svg",
     color: "bg-indigo-50",
     dotColor: "bg-indigo-400",
   },
   {
-    title: "Design UI/UX",
-    description:
-      "Interfaces utilisateur élégantes et expériences utilisateur optimisées.",
+    key: "design",
     icon: "/assets/design.svg",
     color: "bg-orange-50",
     dotColor: "bg-orange-400",
@@ -32,6 +27,8 @@ const skills = [
 ];
 
 export const CompetenceSection = () => {
+  const t = useTranslations("competence");
+
   return (
     <section
       id="competence"
@@ -39,10 +36,9 @@ export const CompetenceSection = () => {
     >
       {/* Title */}
       <Title
-        title="Expertise"
-        heading="Compétences Full-Stack"
-        text="Je combine des compétences techniques avancées avec une approche
-          créative pour offrir des solutions numériques complètes."
+        title={t("header.title")}
+        heading={t("header.heading")}
+        text={t("header.description")}
       />
 
       {/*----------------------------------------------
@@ -61,31 +57,32 @@ export const CompetenceSection = () => {
           {/* ----------------------------------------
                BLOC CARD
              ----------------------------------------------- */}
-          {skills.map((skill, index) => (
+          {competence.map((skill) => (
             <motion.div
               variants={itemVariants}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 200, damping: 10 }}
-              key={index}
+              key={skill.key}
               className="flex flex-col items-center text-center group"
             >
-              {/* Conteneur l'icône + (Blob) */}
+              {/* Conteneur icône */}
               <div className="relative w-48 h-48 mb-2 sm:mb-8 md:mb-8 flex items-center justify-center">
-                {/* Le fond (Blob effect) */}
+                {/* Blob background */}
                 <div
                   className={`absolute inset-0 ${skill.color} rounded-full opacity-60 blur-2xl group-hover:scale-110 transition-transform duration-500`}
                 />
 
-                <div className="relative z-10 w-36 h-36 sm:w-42 sm:h-42  md:w-42 md:h-42">
+                {/* Image */}
+                <div className="relative z-10 w-36 h-36 sm:w-42 md:w-42">
                   <Image
                     src={skill.icon}
-                    alt={skill.title}
+                    alt={t(`items.${skill.key}.title`)}
                     fill
                     className="object-contain"
                   />
                 </div>
 
-                {/* Petits points décoratifs autour de l'image */}
+                {/* Points décoratifs */}
                 <div
                   className={`absolute top-4 left-4 w-3 h-3 rounded-full ${skill.dotColor} opacity-40 animate-bounce duration-3000`}
                 />
@@ -94,11 +91,14 @@ export const CompetenceSection = () => {
                 />
               </div>
 
+              {/* TITLE */}
               <h3 className="text-xl font-bold text-slate-800 mb-4">
-                {skill.title}
+                {t(`items.${skill.key}.title`)}
               </h3>
-              <p className="text-slate-500 leading-relaxed sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm ">
-                {skill.description}
+
+              {/* DESCRIPTION */}
+              <p className="text-slate-500 leading-relaxed sm:text-[16px] md:text-[16px] px-6 text-sm">
+                {t(`items.${skill.key}.description`)}
               </p>
             </motion.div>
           ))}

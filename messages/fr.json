@@ -1,0 +1,308 @@
+{
+  "hero": {
+    "badge": "Bonjour bienvenue !",
+    "title_1": "Je suis <name>Samuel</name> Développeur fullstack",
+    "description": "Spécialisé dans la création d’applications web et mobiles modernes, performantes et adaptées aux besoins réels. J’allie front-end (NextJS, Flutter), back-end (NestJS) API robuste et sécurisée pour transformer vos idées en solutions concrètes.",
+    "cta": "Découvrir mes services"
+  },
+
+  "about": {
+    "badge": "À propos",
+    "title": "Je crée des applications web responsive et mobile",
+    "description": "Passionné par la création d’applications modernes, performantes et intuitives, j’ai acquis les compétences nécessaires pour transformer vos idées en solutions concrètes. J’interviens à chaque étape : de l’analyse du besoin à la conception, au développement, aux tests, à l’optimisation et à la mise en ligne.\n\nMon objectif est de livrer des solutions fiables, maintenables et pensées pour durer, en alliant performance technique et design soigné, tout en offrant une expérience utilisateur fluide et impactante.",
+    "button": "Github",
+    "stats": {
+      "experience": "Années\nd’Exp",
+      "projects": "Projets\nTotal"
+    }
+  },
+
+ "competence": {
+   "header": {
+    "title": "Expertise",
+    "heading": "Compétences Full-Stack",
+    "description": "Je combine des compétences techniques avancées avec une approche créative pour offrir des solutions numériques complètes."
+  },
+    "items": {
+      "web": {
+        "title": "Développement web",
+        "description": "Création de sites web responsifs et performants avec les dernières technologies."
+      },
+      "mobile": {
+        "title": "Développement mobile",
+        "description": "Applications mobiles intuitives et adaptées à vos besoins spécifiques."
+      },
+      "design": {
+        "title": "Design UI/UX",
+        "description": "Interfaces utilisateur élégantes et expériences utilisateur optimisées."
+      }
+    }
+  },
+
+  "atouts": {
+  "header": {
+    "title": "Atouts",
+    "heading": "Ce Qui Fait la Différence",
+    "description": "Mes atouts me permettent de proposer des solutions adaptées et un travail de qualité, sur web comme sur mobile."
+  },
+  "items": {
+    "polyvalence": {
+      "title": "Polyvalence",
+      "description": "Capacité à gérer des projets complexes avec une approche créative et technique."
+    },
+    "collaboration": {
+      "title": "Esprit collaboratif",
+      "description": "Capacité à travailler efficacement en équipe et à partager clairement mes idées techniques."
+    },
+    "rigueur": {
+      "title": "Rigueur",
+      "description": "Capacité à écrire un code propre, maintenable et performant."
+    },
+    "adaptabilite": {
+      "title": "Adaptabilité",
+      "description": "Maîtrise rapide des nouvelles technologies et adaptation aux évolutions du projet."
+    }
+  },
+  "cta": "Contactez-moi"
+},
+
+ "experience": {
+    "header": {
+      "badge": "À propos",
+      "title": "Mes Expériences Professionnelles",
+      "description": "Voici un aperçu de mes expériences, illustrant mon savoir-faire et ma capacité à mener des projets à succès.",
+      "cta": "Mon CV"
+    },
+    "items": {
+      "freelance_fullstack": {
+        "title": "Développeur fullstack",
+        "period": "Avr 2025 - présent",
+        "company": "Freelance",
+        "description": [
+          "Développement d'applications web avec Next.js et NestJS",
+          "Création d'API REST sécurisées avec JWT et PostgreSQL",
+          "Optimisation SEO et performances Lighthouse"
+        ]
+      },
+      "2ets_web": {
+        "title": "Développeur web",
+        "period": "Dec 2024 - mars 2025",
+        "company": "2ets",
+        "description": [
+          "Contribution à la maintenance et évolution de projet existants",
+          "Initiation aux méthodes de travail collaboratif en entreprise",
+          "Mise en place de site vitrine"
+        ]
+      },
+      "freelance_mobile": {
+        "title": "Développeur mobile",
+        "period": "Nov 2023 - fev 2024",
+        "company": "Freelance",
+        "description": "Mise en place d'un système de suivi des étudiants dans leur voiture scolaire et leur fiabilité"
+      },
+      "dici_stage": {
+        "title": "Dev web fullstack (stage)",
+        "period": "janv 2023 - mai 2023",
+        "company": "D.I.C.I",
+        "description": [
+          "Mise en place d'un site web de gestion de produits",
+          "Initiation à la base de données",
+          "Installation de logiciels, configuration machine et système"
+        ]
+      }
+    }
+  },
+
+
+  "projects": {
+  "title": "Portfolio",
+  "heading": "Mes Récents Projets",
+  "description": "Explorez mes projets, chacun reflétant ma passion pour le développement, le design et l'optimisation de solutions performantes.",
+
+  "items": {
+    "webshift": {
+      "title": "Webshift — Agence marketing digital (Next.js)",
+      "description": "WebShift, un site web moderne et responsive dédié au marketing digital, à l’acquisition et aux services de branding en ligne."
+    },
+    "football": {
+      "title": "Saas Football Club",
+      "description": "Dashboard fullstack pour la gestion d’un club de football. Construit avec Next.js et connecté à une API backend NestJS + Prisma."
+    },
+    "portfolio": {
+      "title": "Mon portfolio",
+      "description": "Ce portfolio présente mes compétences, mes projets et mon univers en tant que développeur Fullstack."
+    },
+    "api": {
+      "title": "API backend | NestJS . Prisma . Auth . CRUD Club de football",
+      "description": "API backend complète avec NestJS, Prisma et PostgreSQL, sécurisée par JWT (Refresh Tokens, rôles & permissions, Cookies HttpOnly), incluant des modules métier (Players, Teams, Positions) ainsi que le monitoring (Prometheus, Grafana) et le tracking d’erreurs (Sentry)."
+    },
+    "synexa": {
+      "title": "SyneXa — Solution & Technologies IT (Next.js)",
+      "description": "Ce site a été conçu pour présenter une agence IT moderne, mettre en avant ses domaines d’expertise et permettre aux entreprises de découvrir facilement ses services et de prendre contact rapidement."
+    }
+  }
+  },
+
+   "faq": {
+    "header": {
+      "title": "FAQs",
+      "heading": "Questions fréquentes",
+      "description": "Voici quelques questions courantes sur mes services pour vous aider à mieux comprendre."
+    },
+
+    "items": {
+      "delivery": {
+        "question": "Quel est le délai de livraison d’un projet ?",
+        "answer": "Le délai dépend de la complexité du projet. Un site vitrine peut être livré en 1 à 3 semaines, tandis qu’une application web ou mobile plus complète peut nécessiter 3 à 7 semaines. Un planning précis est défini après l’analyse de vos besoins."
+      },
+
+      "fullstack": {
+        "question": "Interviens-tu sur le front-end et le back-end ?",
+        "answer": "Oui, je suis développeur fullstack. Je conçois des interfaces modernes et optimisées côté front-end, et je développe des API robustes et sécurisées avec NestJS côté back-end."
+      },
+
+      "process": {
+        "question": "Comment se déroule un projet avec toi ?",
+        "answer": "Je commence par analyser vos besoins afin de proposer une solution adaptée. Ensuite, je passe par la conception, le développement, les tests, l’optimisation et enfin la mise en ligne du projet."
+      },
+
+      "responsive": {
+        "question": "Proposes-tu des applications responsive ?",
+        "answer": "Oui, toutes les applications que je développe sont conçues pour fonctionner parfaitement sur ordinateur, tablette et mobile, avec une expérience utilisateur fluide et cohérente."
+      },
+
+      "refactor": {
+        "question": "Peux-tu améliorer ou refondre une application existante ?",
+        "answer": "Oui, je peux optimiser, moderniser ou restructurer une application existante afin d’améliorer ses performances, son design et sa maintenabilité."
+      },
+
+      "contact": {
+        "question": "Comment te contacter pour un projet ?",
+        "answer": "Vous pouvez me contacter via le formulaire de mon portfolio ou par email. Je réponds rapidement pour discuter de votre projet et de vos objectifs."
+      }
+    }
+  },
+
+  "testimonials": {
+  "header": {
+    "title": "Témoignages",
+    "heading": "Ce Que Disent Mes Clients",
+    "description": "Découvrez les retours de mes clients sur la qualité de mon travail et les projets que nous avons réalisés ensemble."
+  },
+  "items": {
+    "james": {
+      "name": "James Walker",
+      "role": "CEO, Agence Digitale",
+      "text": "Nous avons confié à Samuel la refonte complète de notre site web. Il a su comprendre notre vision et proposer une solution moderne et performante. Le site est aujourd’hui plus rapide, mieux structuré et génère davantage de demandes clients. Collaboration très professionnelle du début à la fin."
+    },
+    "sarah": {
+      "name": "Sarah Johnson",
+      "role": "Responsable Marketing",
+      "text": "Samuel a développé notre landing page avec un vrai souci du détail. L’interface est fluide, responsive et optimisée pour la conversion. Il est réactif, organisé et respecte parfaitement les délais. Je recommande sans hésitation."
+    },
+    "carla": {
+      "name": "Carla Moreau",
+      "role": "Fondatrice, Startup Tech",
+      "text": "Nous avions besoin d’un développeur fiable pour structurer notre plateforme web et app mobile. Samuel a su apporter des solutions techniques efficaces tout en gardant une approche claire et pédagogique. Son travail a amélioré l’expérience utilisateur et la stabilité du projet."
+    }
+  },
+  "clients": {
+    "james": {
+      "name": "James Walker",
+      "role": "CEO"
+    },
+    "sarah": {
+      "name": "Sarah Johnson",
+      "role": "Manager"
+    },
+    "carla": {
+      "name": "Carla Moreau",
+      "role": "Fondatrice"
+    }
+  }
+},
+
+"cta": {
+  "title": "Restons connectés",
+  "description": "Au-delà des chiffres, j'aime partager ma passion pour le développement web et mobile. Rejoins ma newsletter pour suivre mes projets, mes retours d'expérience et ma veille technologies.",
+  "inputPlaceholder": "Entrer votre adresse email",
+  "button": "S’inscrire",
+  "stats": {
+    "frontend": {
+      "value": "12 +",
+      "label1": "Projets",
+      "label2": "Front-end"
+    },
+    "backend": {
+      "value": "10 +",
+      "label1": "Projets",
+      "label2": "Back-end"
+    }
+  }
+},
+
+"contact": {
+  "header": {
+    "title": "Contactez- Moi",
+    "heading": "Donnez Vie à Vos Idées",
+    "description": "Besoin d'un développeur passionné, créatif et rigoureux pour donner un nouvel élan à vos projets et transformer vos idées en solutions performantes ? N'hésitez pas à me joindre !"
+  },
+  "info": {
+    "address": {
+      "label": "Address",
+      "value": "Abidjan, Côte d’ivoire"
+    },
+    "email": {
+      "label": "Email",
+      "value": "samueltiemtore10@gmail.com"
+    },
+    "phone": {
+      "label": "Mobile",
+      "value": "+225 05 96 08 56 43"
+    }
+  },
+  "form": {
+    "name": "Votre Nom *",
+    "email": "Adresse E-mail *",
+    "subject": "Sujets *",
+    "phone": "Mobile *",
+    "message": "Message *",
+    "buttonIdle": "Envoyer",
+    "buttonLoading": "Envoi..."
+  }
+},
+
+"skills": {
+    "header": {
+      "title": "Compétences",
+      "heading": "Mes technologies",
+      "description": "Un ensemble de compétences techniques et créatives me permettant de concevoir des solutions web et mobiles modernes, responsives et performantes."
+    }
+  },
+
+  "navbar": {
+    "menu": {
+      "home": "Accueil",
+      "about": "A propos",
+      "skills": "Compétences",
+      "experience": "Expériences",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "cv": "Télécharger CV"
+  },
+
+   "mobileMenu": {
+    "description": "Développeur fullstack | UI/UX . Web . Mobile",
+    "menu": {
+      "home": "Accueil",
+      "about": "A propos",
+      "skills": "Compétences",
+      "experience": "Expériences",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "cv": "Télécharger CV",
+    "close": "Fermer"
+  }
+}

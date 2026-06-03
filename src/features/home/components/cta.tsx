@@ -1,19 +1,19 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export const CtaSection = () => {
+  const t = useTranslations("cta");
+
   return (
     <section className="pt-12 pb-0 px-6 sm:px-10 w-full bg-cover bg-center bg-[url('/assets/bg-cta.svg')] rounded-3xl my-0 md:my-20">
-      {/*----------------------------------------------
-           Main Content Grid 
-        ----------------------------------------------------*/}
-      <div className="max-w-7xl mx-auto pb-0  md:pb-20 grid grid-cols-1 md:grid-cols-[1.4fr_1.2fr] gap-16 md:gap-0 items-center overflow-hidden px-0 sm:px-12 md:px:18">
 
-        {/* ----------------------------------------
-             BLOC GAUCHE : Texte & Formulaire
-           ----------------------------------------------- */}
-        {/* wrapper motion */}
+      {/* MAIN GRID */}
+      <div className="max-w-7xl mx-auto pb-0 md:pb-20 grid grid-cols-1 md:grid-cols-[1.4fr_1.2fr] gap-16 md:gap-0 items-center overflow-hidden px-0 sm:px-12 md:px:18">
+
+        {/* LEFT */}
         <div className="overflow-hidden">
           <motion.div
             initial={{ x: -50, opacity: 0, scale: 0.95 }}
@@ -29,71 +29,77 @@ export const CtaSection = () => {
           >
             <div className="space-y-4">
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                Restons connectés
+                {t("title")}
               </h2>
-              <p className="max-w-2xl mx-auto text-white sm:text-[16px] md:text-[16px] text-sm leading-relaxed ">
-               Au-delà des chiffres, j&apos;aime partager ma passion pour le développement web et mobile. Rejoins ma newsletter 
-               pour suivre mes projets, mes retours d&apos;expérience et ma veille technologies.
+
+              <p className="max-w-2xl mx-auto text-white sm:text-[16px] md:text-[16px] text-sm leading-relaxed">
+                {t("description")}
               </p>
             </div>
 
-            {/* newsletter */}
-            <div className="relative max-w-md md:w-full w-84.5 ">
+            {/* NEWSLETTER */}
+            <div className="relative max-w-md md:w-full w-84.5">
               <form>
                 <div className="flex items-center p-1.5 bg-white rounded-full shadow-lg">
+
                   <input
                     type="email"
-                    placeholder="Entrer votre adresse email"
+                    placeholder={t("inputPlaceholder")}
                     className="grow bg-transparent px-6 py-3 outline-none text-gray-700 placeholder:text-gray-400 md:text-sm text-xs"
                   />
+
                   <button className="hover:scale-102 bg-black transition-all duration-300 text-white px-6 py-3 rounded-full flex items-center gap-0 md:gap-2 md:text-sm text-xs font-medium hover:bg-[#FF5722]">
-                    S’inscrire
+                    {t("button")}
                     <ArrowUpRight className="w-4 h-4" />
                   </button>
+
                 </div>
               </form>
             </div>
           </motion.div>
         </div>
 
-        {/* ----------------------------------------
-             BLOC DROITE : Bulles de Statistiques
-           ----------------------------------------------- */}
-       <motion.div
-            initial={{ y: 50, opacity: 0, scale: 0.95 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{
-              duration: 1.5,
-              type: "spring",
-              stiffness: 100,
-              damping: 20,
-            }}
-            className="relative h-75 flex items-center justify-center lg:justify-end mr-0 sm:mr-18 md:mr-6"
-          >
-            {/* Bulle Projets Front-end */}
-            <div className="absolute top-0 right-38 md:right-40 w-48 h-48 md:w-56 md:h-56 bg-[#388E7B] rounded-full flex flex-col items-center justify-center text-white  z-10 border border-white/10">
-              <span className="text-5xl font-extrabold ml-6 md:ml-8">12 +</span>
-              <span className="text-center sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm mt-6 font-light leading-tight">
-                Projets
-                <br />
-                Front-end
-              </span>
-            </div>
+        {/* RIGHT */}
+        <motion.div
+          initial={{ y: 50, opacity: 0, scale: 0.95 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+          }}
+          className="relative h-75 flex items-center justify-center lg:justify-end mr-0 sm:mr-18 md:mr-6"
+        >
 
-            {/* Bulle Projets Back-end */}
-            <div className="absolute bottom-26 md:-bottom-2 right-0 md:right-4 w-48 h-48 md:w-56 md:h-56 bg-[#2D6A5D] rounded-full flex flex-col items-center justify-center text-white  z-20 border border-white/10">
-              <span className="text-5xl font-extrabold ml-6 md:ml-8">10 +</span>
-              <span className="text-center sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm mt-6 font-light leading-tight">
-                Projets
-                <br />
-                Back-end
-              </span>
-            </div>
+          {/* FRONTEND */}
+          <div className="absolute top-0 right-38 md:right-40 w-48 h-48 md:w-56 md:h-56 bg-[#388E7B] rounded-full flex flex-col items-center justify-center text-white z-10 border border-white/10">
+            <span className="text-5xl font-extrabold ml-6 md:ml-8">
+              {t("stats.frontend.value")}
+            </span>
+            <span className="text-center sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm mt-6 font-light leading-tight">
+              {t("stats.frontend.label1")}
+              <br />
+              {t("stats.frontend.label2")}
+            </span>
+          </div>
 
-            {/* Effet décoratif (Cercle flou en arrière-plan) */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl z-0"></div>
-          </motion.div>
+          {/* BACKEND */}
+          <div className="absolute bottom-26 md:-bottom-2 right-0 md:right-4 w-48 h-48 md:w-56 md:h-56 bg-[#2D6A5D] rounded-full flex flex-col items-center justify-center text-white z-20 border border-white/10">
+            <span className="text-5xl font-extrabold ml-6 md:ml-8">
+              {t("stats.backend.value")}
+            </span>
+            <span className="text-center sm:text-[16px] md:text-[16px] px-6 md:px-6 text-sm mt-6 font-light leading-tight">
+              {t("stats.backend.label1")}
+              <br />
+              {t("stats.backend.label2")}
+            </span>
+          </div>
+
+          {/* BACKGROUND EFFECT */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl z-0" />
+        </motion.div>
       </div>
     </section>
   );

@@ -16,7 +16,7 @@ export const Footer = () => {
           Developed and designed by <span className="text-slate-700 ml-1 font-bold">SAM</span>
           <span className="text-[#FF5722] ml-1 font-bold"> DEV</span>{" "}
           <Copyright size={14} className="inline mx-1 text-slate-400" />
-          {currentYear} | Tous droits réservés
+          {currentYear} | All right reserved
         </p>
       </div>
     </section>

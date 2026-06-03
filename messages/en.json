@@ -1,0 +1,307 @@
+{
+  "hero": {
+    "badge": "Hello welcome!",
+    "title_1": "I am <name>Samuel</name> Fullstack Developer",
+    "description": "Specialized in building modern web and mobile applications with strong UI/UX and scalable backend systems using NextJS, Flutter and NestJS.",
+    "cta": "Discover my services"
+  },
+
+   "about": {
+    "badge": "About",
+    "title": "I build responsive web and mobile applications",
+    "description": "I am passionate about building modern, fast and intuitive applications. I have developed the skills needed to turn ideas into real-world solutions. I work on every stage: requirement analysis, design, development, testing, optimization and deployment.\n\nMy goal is to deliver reliable, maintainable solutions built to last, combining strong technical performance with clean design and a smooth user experience.",
+    "button": "Github",
+    "stats": {
+      "experience": "Years\nExp",
+      "projects": "Total\nProjects"
+    }
+  },
+
+  "competence": {
+     "header": {
+    "title": "Expertise",
+    "heading": "Full-Stack Skills",
+    "description": "I combine advanced technical skills with a creative approach to deliver complete digital solutions."
+  },
+    "items": {
+      "web": {
+        "title": "Web Development",
+        "description": "Building responsive and high-performance websites using modern technologies."
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "Intuitive mobile applications tailored to your specific needs."
+      },
+      "design": {
+        "title": "UI/UX Design",
+        "description": "Elegant user interfaces and optimized user experiences."
+      }
+    }
+  },
+
+  "atouts": {
+  "header": {
+    "title": "Strengths",
+    "heading": "What Makes the Difference",
+    "description": "My strengths allow me to deliver tailored solutions and high-quality work for both web and mobile projects."
+  },
+  "items": {
+    "polyvalence": {
+      "title": "Versatility",
+      "description": "Ability to manage complex projects with a creative and technical approach."
+    },
+    "collaboration": {
+      "title": "Team spirit",
+      "description": "Ability to work effectively in a team and clearly share technical ideas."
+    },
+    "rigueur": {
+      "title": "Precision",
+      "description": "Ability to write clean, maintainable, and efficient code."
+    },
+    "adaptabilite": {
+      "title": "Adaptability",
+      "description": "Quick mastery of new technologies and adaptation to project changes."
+    }
+  },
+   "cta": "Contact me"
+  },
+
+  "experience": {
+    "header": {
+      "badge": "About",
+      "title": "My Professional Experiences",
+      "description": "An overview of my experience, showing my skills and ability to deliver successful projects.",
+      "cta": "My Resume"
+    },
+    "items": {
+      "freelance_fullstack": {
+        "title": "Fullstack Developer",
+        "period": "Apr 2025 - present",
+        "company": "Freelance",
+        "description": [
+          "Developed web applications using Next.js and NestJS",
+          "Built secure REST APIs with JWT and PostgreSQL",
+          "Improved SEO and Lighthouse performance"
+        ]
+      },
+      "2ets_web": {
+        "title": "Web Developer",
+        "period": "Dec 2024 - Mar 2025",
+        "company": "2ets",
+        "description": [
+          "Maintained and improved existing projects",
+          "Worked in collaborative team environments",
+          "Built landing and showcase websites"
+        ]
+      },
+      "freelance_mobile": {
+        "title": "Mobile Developer",
+        "period": "Nov 2023 - Feb 2024",
+        "company": "Freelance",
+        "description": "Built a student tracking system for school transport monitoring"
+      },
+      "dici_stage": {
+        "title": "Fullstack Developer (Intern)",
+        "period": "Jan 2023 - May 2023",
+        "company": "D.I.C.I",
+        "description": [
+          "Built a product management web app",
+          "Learned database fundamentals",
+          "Installed and configured development environments"
+        ]
+      }
+    }
+  },
+
+  "projects": {
+  "title": "Portfolio",
+  "heading": "My Recent Projects",
+  "description": "Explore my projects, each reflecting my passion for development, design, and high-performance solutions.",
+
+  "items": {
+    "webshift": {
+    "title": "Webshift — Digital Marketing Agency (Next.js)",
+    "description": "WebShift, a modern and responsive website dedicated to digital marketing, acquisition, and online branding services."
+    },
+    "football": {
+    "title": "Saas Football Club",
+    "description": "Fullstack dashboard for managing a football club. Built with Next.js and connected to a NestJS + Prisma backend API."
+    },
+    "portfolio": {
+    "title": "My Portfolio",
+    "description": "This portfolio showcases my skills, projects, and world as a Fullstack developer."
+    },
+    "api": {
+    "title": "Backend API | NestJS . Prisma . Auth . CRUD Football Club",
+    "description": "Complete backend API with NestJS, Prisma, and PostgreSQL, secured with JWT (Refresh Tokens, roles & permissions, HttpOnly Cookies), including business modules (Players, Teams, Positions) as well as monitoring (Prometheus, Grafana) and error tracking (Sentry)."
+    },
+    "synexa": {
+    "title": "SyneXa — IT Solution & Technologies (Next.js)",
+    "description": "This site was designed to present a modern IT agency, highlight its areas of expertise, and allow companies to easily discover its services and get in touch quickly."
+    }
+   }  
+  },
+
+   "faq": {
+    "header": {
+      "title": "FAQs",
+      "heading": "Frequently Asked Questions",
+      "description": "Here are some common questions about my services to help you better understand how I work."
+    },
+
+    "items": {
+      "delivery": {
+        "question": "What is the delivery time for a project?",
+        "answer": "The timeline depends on the complexity of the project. A showcase website can be delivered within 1 to 3 weeks, while a complete web or mobile application may require 3 to 7 weeks. A detailed schedule is defined after analyzing your requirements."
+      },
+
+      "fullstack": {
+        "question": "Do you work on both front-end and back-end?",
+        "answer": "Yes, I am a full-stack developer. I build modern and optimized front-end interfaces and develop secure, robust APIs with NestJS on the back-end."
+      },
+
+      "process": {
+        "question": "How does a project work with you?",
+        "answer": "I start by analyzing your needs to propose the best solution. Then I go through design, development, testing, optimization, and finally deployment."
+      },
+
+      "responsive": {
+        "question": "Do you build responsive applications?",
+        "answer": "Yes, every application I develop is designed to work perfectly on desktop, tablet, and mobile devices, ensuring a smooth and consistent user experience."
+      },
+
+      "refactor": {
+        "question": "Can you improve or redesign an existing application?",
+        "answer": "Yes, I can optimize, modernize, or restructure an existing application to improve its performance, design, and maintainability."
+      },
+
+      "contact": {
+        "question": "How can I contact you for a project?",
+        "answer": "You can contact me through the portfolio contact form or by email. I respond quickly to discuss your project and objectives."
+      }
+    }
+  },
+
+  "testimonials": {
+  "header": {
+    "title": "Testimonials",
+    "heading": "What My Clients Say",
+    "description": "Discover feedback from my clients about the quality of my work and the projects we built together."
+  },
+  "items": {
+    "james": {
+      "name": "James Walker",
+      "role": "CEO, Digital Agency",
+      "text": "We entrusted Samuel with a complete redesign of our website. He understood our vision and delivered a modern and high-performing solution. The site is now faster, better structured, and generates more client inquiries. A very professional collaboration from start to finish."
+    },
+    "sarah": {
+      "name": "Sarah Johnson",
+      "role": "Marketing Manager",
+      "text": "Samuel developed our landing page with great attention to detail. The interface is smooth, responsive, and optimized for conversion. He is responsive, organized, and respects deadlines perfectly. I highly recommend him."
+    },
+    "carla": {
+      "name": "Carla Moreau",
+      "role": "Founder, Tech Startup",
+      "text": "We needed a reliable developer to structure our web platform and mobile app. Samuel provided effective technical solutions while keeping a clear and educational approach. His work improved user experience and project stability."
+    }
+  },
+  "clients": {
+    "james": {
+      "name": "James Walker",
+      "role": "CEO"
+    },
+    "sarah": {
+      "name": "Sarah Johnson",
+      "role": "Manager"
+    },
+    "carla": {
+      "name": "Carla Moreau",
+      "role": "Founder"
+    }
+  }
+  },
+
+   "cta": {
+  "title": "Stay connected",
+  "description": "Beyond numbers, I enjoy sharing my passion for web and mobile development. Join my newsletter to follow my projects, insights, and tech watch.",
+  "inputPlaceholder": "Enter your email address",
+  "button": "Subscribe",
+  "stats": {
+    "frontend": {
+      "value": "12 +",
+      "label1": "Projects",
+      "label2": "Front-end"
+    },
+    "backend": {
+      "value": "10 +",
+      "label1": "Projects",
+      "label2": "Back-end"
+    }
+  }
+  },
+
+  "contact": {
+  "header": {
+    "title": "Contact Me",
+    "heading": "Bring Your Ideas to Life",
+    "description": "Need a passionate, creative and detail-oriented developer to boost your projects and turn your ideas into powerful solutions? Feel free to reach out!"
+  },
+  "info": {
+    "address": {
+      "label": "Address",
+      "value": "Abidjan, Côte d’Ivoire"
+    },
+    "email": {
+      "label": "Email",
+      "value": "samueltiemtore10@gmail.com"
+    },
+    "phone": {
+      "label": "Mobile",
+      "value": "+225 05 96 08 56 43"
+    }
+  },
+  "form": {
+    "name": "Your Name *",
+    "email": "Email Address *",
+    "subject": "Subject *",
+    "phone": "Phone *",
+    "message": "Message *",
+    "buttonIdle": "Send",
+    "buttonLoading": "Sending..."
+  }
+  },
+
+  "skills": {
+    "header": {
+      "title": "Skills",
+      "heading": "My Technologies",
+      "description": "A set of technical and creative skills allowing me to build modern, responsive and high-performance web and mobile solutions."
+    }
+  },
+  
+  "navbar": {
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "cv": "Download CV"
+  },
+
+  "mobileMenu": {
+    "description": "Fullstack developer | UI/UX . Web . Mobile",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "cv": "Download CV",
+    "close": "Close"
+  }
+}

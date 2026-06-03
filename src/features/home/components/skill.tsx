@@ -1,6 +1,9 @@
+"use client";
+
 import { Cpu, Waypoints, BarChart } from "lucide-react";
 import Image from "next/image";
 import { Title } from "./title";
+import { useTranslations } from "next-intl";
 
 const skills = [
   { name: "Next.js", icon: "/assets/skills/nextjs.svg" },
@@ -26,17 +29,13 @@ const skills = [
   { name: "Swagger", icon: "/assets/skills/swagger-icon.svg" },
   { name: "Docker", icon: "/assets/skills/docker-icon.svg" },
   { name: "Rest API", icon: <Waypoints className="w-10 h-10 text-gray-700" /> },
-  {
-    name: "Monitoring",
-    icon: <BarChart className="w-10 h-10 text-gray-700" />,
-  },
-  {
-    name: "Intelligence Artificielle",
-    icon: <Cpu className="w-10 h-10 text-gray-700" />,
-  },
+  { name: "Monitoring", icon: <BarChart className="w-10 h-10 text-gray-700" /> },
+  { name: "Artificial Intelligence", icon: <Cpu className="w-10 h-10 text-gray-700" /> },
 ];
 
 export const SkillSection = () => {
+  const t = useTranslations("skills");
+
   return (
     <section className="relative overflow-hidden py-0 sm:py-18 md:py-30">
       
@@ -47,21 +46,20 @@ export const SkillSection = () => {
           alt=""
           width={600}
           height={600}
-          className="`w-75 md:w-112.5  md:h-50 h-46 animate-pulse"
+          className="w-75 md:w-112.5 md:h-50 h-46 animate-pulse"
         />
       </div>
 
       <div className="container mx-auto px-6 sm:px-10">
-        {/* Title */}
+        
+        {/* TITLE */}
         <Title
-          title="Skills"
-          heading="Mes technologies"
-          text="Un ensemble de compétences techniques et créatives me permettant de
-            concevoir des solutions web et mobiles modernes, responsives et
-            performantes."
+          title={t("header.title")}
+          heading={t("header.heading")}
+          text={t("header.description")}
         />
 
-        {/* Main Content Grid */}
+        {/* GRID */}
         <div className="max-w-7xl mx-auto px-2 md:px-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-30 sm:mt-38 md:mt-38">
           {skills.map((skill, index) => (
             <div
@@ -80,12 +78,14 @@ export const SkillSection = () => {
                   skill.icon
                 )}
               </div>
+
               <span className="text-gray-800 text-sm sm:text-[16px] md:text-[16px] text-center mt-2">
                 {skill.name}
               </span>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
