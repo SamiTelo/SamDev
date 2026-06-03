@@ -5,13 +5,12 @@ import Image from "next/image";
 import { Github } from "lucide-react";
 import { Title } from "./title";
 import Marquee from "react-fast-marquee";
+import { useTranslations } from "next-intl";
 
 const projects = [
   {
     id: 1,
-    title: "Webshift — Agence marketing digital (Next.js)",
-    description:
-      "WebShift, un site web moderne et responsive dédié au marketing digital, à l’acquisition et aux services de branding en ligne.",
+    key: "webshift",
     image: "/assets/projects/web-shift.png",
     skills: [
       "/assets/skills/nextjs.svg",
@@ -28,9 +27,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Football Club",
-    description:
-      "Dashboard fullstack pour la gestion d’un club de football. Construit avec Next.js et connecté à une API backend NestJS + Prisma.",
+    key: "football",
     image: "/assets/projects/dashboard-main.png",
     skills: [
       "/assets/skills/nextjs.svg",
@@ -50,9 +47,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Mon portfolio",
-    description:
-      "Ce portfolio présente mes compétences, mes projets et mon univers en tant que développeur Fullstack.",
+    key: "portfolio",
     image: "/assets/projects/portfolio.png",
     skills: [
       "/assets/skills/nextjs.svg",
@@ -69,9 +64,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "API backend | NestJS . Prisma . Auth . CRUD Club de football",
-    description:
-      "API backend complète avec NestJS, Prisma et PostgreSQL, sécurisée par JWT (Refresh Tokens, rôles & permissions, Cookies HttpOnly), incluant des modules métier (Players, Teams, Positions) ainsi que le monitoring (Prometheus, Grafana) et le tracking d’erreurs (Sentry).",
+    key: "api",
     image: "/assets/projects/swagger-api.png",
     skills: [
       "/assets/skills/typescript-icon.svg",
@@ -81,7 +74,6 @@ const projects = [
       "/assets/skills/postgresql-icon.svg",
       "/assets/skills/docker-icon.svg",
       "/assets/skills/swagger-icon.svg",
-      "/assets/skills/postgresql-icon.svg",
       "/assets/skills/github-icon.svg",
       "/assets/skills/git-icon.svg",
       "/assets/skills/postman-icon.svg",
@@ -89,12 +81,9 @@ const projects = [
     demoUrl: "https://api-football-gfpz.onrender.com/docs",
     githubUrl: "https://github.com/SamiTelo/API-Football",
   },
-  
-   {
+  {
     id: 5,
-    title: "SyneXa — Solution & Technologies IT (Next.js)",
-    description:
-      "Ce site a été conçu pour présenter une agence IT moderne, mettre en avant ses domaines d’expertise et permettre aux entreprises de découvrir facilement ses services et de prendre contact rapidement.",
+    key: "synexa",
     image: "/assets/projects/synexa.png",
     skills: [
       "/assets/skills/nextjs.svg",
@@ -112,14 +101,18 @@ const projects = [
 ];
 
 export const ProjectSection = () => {
+  const t = useTranslations("projects");
+
   return (
-    <section id="project" className="relative overflow-hidden pt-38 pb-20 md:pb-30 px-6 sm:px-10 min-h-screen">
-      
+    <section
+      id="project"
+      className="relative overflow-hidden pt-38 pb-20 md:pb-30 px-6 sm:px-10 min-h-screen"
+    >
       {/* Title */}
       <Title
-        title="Portfolio"
-        heading="Mes Récents Projets"
-        text="Explorez mes projets, chacun reflétant ma passion pour le développement, le design et l'optimisation de solutions performantes."
+        title={t("title")}
+        heading={t("heading")}
+        text={t("description")}
       />
 
       {/* IMAGE BG TOP LEFT */}
@@ -135,7 +128,6 @@ export const ProjectSection = () => {
 
       {/* Marquee Wrapper */}
       <div className="relative mt-28 md:mt-38 max-w-6xl mx-auto">
-        
         {/* Gradients */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-20 md:w-40 bg-linear-to-r from-white to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-20 md:w-40 bg-linear-to-l from-white to-transparent z-10" />
@@ -151,37 +143,36 @@ export const ProjectSection = () => {
               key={project.id}
               className="relative overflow-hidden rounded-4xl px-4 pt-4 pb-8 md:pb-10 bg-[#F6F9FC] border border-gray-100 w-87.5 md:w-125 mx-6"
             >
-              {/* Image */}
-              <div className="relative h-54 sm:h-58 md:h-74 w-full overflow-hidden rounded-xl ">
+              {/* IMAGE */}
+              <div className="relative h-54 sm:h-58 md:h-74 w-full overflow-hidden rounded-xl">
                 <Image
                   src={project.image}
-                  alt={project.title}
+                  alt={t(`items.${project.key}.title`)}
                   fill
                   className="object-cover"
                 />
               </div>
 
-              {/* Content */}
+              {/* CONTENT */}
               <div className="mt-8 md:mt-11 space-y-4 px-2">
                 <h3 className="text-xl font-bold text-gray-900 line-clamp-1">
-                  {project.title}
+                  {t(`items.${project.key}.title`)}
                 </h3>
 
                 <p className="text-sm leading-relaxed text-gray-500 h-10 line-clamp-2">
-                  {project.description}
+                  {t(`items.${project.key}.description`)}
                 </p>
 
-                {/* Skills empilés */}
+                {/* SKILLS */}
                 <div className="flex items-center -space-x-3 mt-6">
                   {project.skills.slice(0, 11).map((skill, index) => (
                     <div
                       key={index}
                       className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-white bg-[#F6F9FC]"
-                      style={{ zIndex: project.skills.length - index }}
                     >
                       <Image
                         src={skill}
-                        alt="Skill icon"
+                        alt="skill"
                         fill
                         className="object-contain p-1"
                       />
@@ -189,11 +180,11 @@ export const ProjectSection = () => {
                   ))}
                 </div>
 
+                {/* ACTIONS */}
                 <div className="flex items-center justify-between pt-2 md:pt-4 gap-6 md:gap-14">
                   <a
                     href={project.demoUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
                     className="flex-1 text-center py-2 md:py-3 rounded-full text-sm font-semibold bg-black text-white hover:bg-gray-800 transition-colors"
                   >
                     Demo
@@ -202,7 +193,6 @@ export const ProjectSection = () => {
                   <a
                     href={project.githubUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
                     className="p-2.5 md:p-3.5 rounded-full border bg-white border-gray-100 text-orange-500 hover:text-black transition-colors"
                   >
                     <Github size={20} />

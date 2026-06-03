@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Linkedin, Instagram, ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export const HeroSection = () => {
+  const t = useTranslations("hero");
+
   return (
     <section
       id="hero"
@@ -18,7 +21,7 @@ export const HeroSection = () => {
           BLOC LEFT: Text Presentation 
       ----------------------------------------------- */}
 
-       {/* wrapper motion */}
+        {/* wrapper motion */}
         <div className="overflow-hidden">
           <motion.div
             initial={{ x: -50, opacity: 0, scale: 0.95 }}
@@ -49,7 +52,7 @@ export const HeroSection = () => {
               </div>
               <div>
                 <h6 className="text-[#F75023] text-xs text-center pt-2.5">
-                  Bonjour bienvenue !
+                  {t("badge")}
                 </h6>
               </div>
             </motion.div>
@@ -57,16 +60,15 @@ export const HeroSection = () => {
 
             {/* Text */}
             <h1 className="font-bold text-4xl md:text-6xl leading-tight text-center md:text-left">
-              Je suis <span className="text-[#F75023]">Samuel</span> Développeur
-              fullstack
+              {t.rich("title_1", {
+                name: (chunks) => (
+                  <span className="text-[#F75023]">{chunks}</span>
+                ),
+              })}
             </h1>
 
             <p className="mt-6 sm:text-[16px] md:text-[16px] text-sm text-gray-700 text-center md:text-left leading-relaxed">
-              Spécialisé dans la création d’applications web et mobiles
-              modernes, performantes et adaptées aux besoins réels. J’allie
-              front-end (NextJS, Flutter), back-end (NestJS) API robuste et
-              sécuriser pour transformer vos idées en solutions concrètes,
-              intuitives et efficaces de A à Z.
+              {t("description")}
             </p>
 
             {/* Buttom */}
@@ -83,7 +85,7 @@ export const HeroSection = () => {
                   className="w-full md:w-auto inline-flex justify-center items-center gap-2 bg-[#F75023] text-white px-10 py-4 rounded-full md:text-[16px] text-sm"
                 >
                   <ArrowUpRight size={20} />
-                  Découvrir mes services
+                  {t("cta")}
                 </motion.div>
               </Link>
 

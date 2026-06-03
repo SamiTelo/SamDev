@@ -1,9 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
 export const AboutSection = () => {
+  const t = useTranslations("about");
+
   return (
     <section
       id="about"
@@ -64,8 +67,8 @@ export const AboutSection = () => {
               <div className="flex items-center justify-center w-10 h-10 md:w-16 md:h-16 rounded-full border-4 border-purple-100 text-purple-600 font-bold text-2xl md:text-4xl">
                 3
               </div>
-              <p className="text-gray-700 font-medium text-xs md:text-[16px] leading-tight">
-                Années <br /> d&apos;Exp
+              <p className="text-gray-700 font-medium text-xs md:text-[16px] leading-tight whitespace-pre-line">
+                {t("stats.experience")}
               </p>
             </div>
 
@@ -78,8 +81,8 @@ export const AboutSection = () => {
               <span className="text-emerald-400 text-2xl md:text-4xl font-bold">
                 +15
               </span>
-              <p className="text-gray-700 font-medium text-xs md:text-[16px] leading-tight">
-                Projets <br /> Total
+              <p className="text-gray-700 font-medium text-xs md:text-[16px] leading-tight whitespace-pre-line">
+                {t("stats.projects")}
               </p>
             </motion.div>
           </div>
@@ -104,11 +107,11 @@ export const AboutSection = () => {
               }}
             >
               <span className="text-primary font-medium text-sm md:text-lg  tracking-wider">
-                A propos
+                {t("badge")}
               </span>
 
               <h2 className="font-bold text-3xl md:text-5xl mt-6 md:mt-4 leading-tight">
-                Je Créer Des Appli Web Responsive et Mobile
+                {t("title")}
               </h2>
             </motion.div>
           </div>
@@ -124,18 +127,8 @@ export const AboutSection = () => {
                 damping: 20,
               }}
             >
-              <p className="sm:text-[16px] md:text-[16px] text-sm text-gray-700 leading-relaxed max-w-xl">
-                Passionné par la création d’applications modernes, performantes
-                et intuitives, j’ai acquis les compétences nécessaires pour
-                transformer vos idées en solutions concrètes. J’interviens à
-                chaque étape : de l’analyse du besoin à la conception, au
-                développement, aux tests, à l’optimisation et à la mise en
-                ligne. <br />
-                <br />
-                Mon objectif est de livrer des solutions fiables, maintenables
-                et pensées pour durer, en alliant performance technique et
-                design soigné, tout en offrant une expérience utilisateur fluide
-                et impactante.
+              <p className="sm:text-[16px] md:text-[16px] text-sm text-gray-700 leading-relaxed max-w-xl whitespace-pre-line">
+               {t("description")}
               </p>
 
               <div className="mt-8">
@@ -143,7 +136,7 @@ export const AboutSection = () => {
                   href="https://github.com/SamiTelo"
                   className="inline-block  text-primary-foreground md:text-[16px] text-sm py-4 px-10 rounded-full bg-primary hover:bg-black transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-200 hover:shadow-black/50"
                 >
-                  Github
+                  {t("button")}
                 </Link>
               </div>
             </motion.div>
