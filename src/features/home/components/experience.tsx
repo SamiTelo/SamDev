@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const experiences = [
   { key: "freelance_fullstack", icon: "/assets/mobile-icon.svg" },
@@ -13,6 +13,14 @@ const experiences = [
 
 export const ExperienceSection = () => {
   const t = useTranslations("experience");
+
+    const locale = useLocale();
+  
+    const cvPath =
+    locale === "fr"
+      ? "/assets/cv/cv-tiemtore-samuel-fr.pdf"
+      : "/assets/cv/cv-tiemtore-samuel-en.pdf";
+  
 
   return (
     <section
@@ -52,8 +60,10 @@ export const ExperienceSection = () => {
           </p>
 
           <a
-            href="/assets/cv/cv-tiemtore-samuel.pdf"
+            href={cvPath}
             download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block mt-4 text-white md:text-[16px] text-sm py-4 px-10 rounded-full bg-[#FF5722] hover:bg-black transition-all"
           >
             {t("header.cta")}

@@ -60,7 +60,7 @@ export const SkillSection = () => {
         />
 
         {/* GRID */}
-        <div className="max-w-7xl mx-auto px-2 md:px-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-30 sm:mt-38 md:mt-38">
+        <div className="max-w-7xl mx-auto px-2 md:px-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-14 sm:mt-28 md:mt-38">
           {skills.map((skill, index) => (
             <div
               key={index}

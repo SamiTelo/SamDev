@@ -127,7 +127,7 @@ export const ProjectSection = () => {
       </div>
 
       {/* Marquee Wrapper */}
-      <div className="relative mt-28 md:mt-38 max-w-6xl mx-auto">
+      <div className="relative mt-18 md:mt-38 max-w-6xl mx-auto">
         {/* Gradients */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-20 md:w-40 bg-linear-to-r from-white to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-20 md:w-40 bg-linear-to-l from-white to-transparent z-10" />
