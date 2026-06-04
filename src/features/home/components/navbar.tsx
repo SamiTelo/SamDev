@@ -21,6 +21,11 @@ export const NavBar = () => {
     router.push(segments.join("/"));
   };
 
+  const cvPath =
+  locale === "fr"
+    ? "/assets/cv/cv-tiemtore-samuel-fr.pdf"
+    : "/assets/cv/cv-tiemtore-samuel-en.pdf";
+
   return (
     <nav className="mb-16 md:mb-20 flex items-center justify-between rounded-full bg-black px-6 md:px-8 py-4 md:py-5 text-white backdrop-blur">
 
@@ -99,7 +104,7 @@ export const NavBar = () => {
 
         {/* CV */}
         <a
-          href="/assets/cv/cv-tiemtore-samuel.pdf"
+          href={cvPath}
           download
           target="_blank"
           rel="noopener noreferrer"

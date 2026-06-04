@@ -12,12 +12,19 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const SHEET_SIDES = ["left"] as const;
 
 export function SheetSide() {
   const t = useTranslations("mobileMenu");
+
+  const locale = useLocale();
+
+  const cvPath =
+  locale === "fr"
+    ? "/assets/cv/cv-tiemtore-samuel-fr.pdf"
+    : "/assets/cv/cv-tiemtore-samuel-en.pdf";
 
   return (
     <div className="flex flex-wrap gap-2 md:hidden">
@@ -85,7 +92,7 @@ export function SheetSide() {
             {/* Footer */}
             <SheetFooter>
               <a
-                href="/assets/cv/cv-tiemtore-samuel.pdf"
+                href={cvPath}
                 download
                 target="_blank"
                 rel="noopener noreferrer"

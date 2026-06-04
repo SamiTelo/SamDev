@@ -28,7 +28,7 @@ export const ContactSection = () => {
       />
 
       {/* MAIN GRID */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-18 sm:gap-20 md:gap-12 items-start mt-32">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-18 sm:gap-20 md:gap-12 items-start mt-18 md:mt-32">
         {/* LEFT */}
         <motion.div
           initial={{ x: -50, opacity: 0, scale: 0.95 }}
